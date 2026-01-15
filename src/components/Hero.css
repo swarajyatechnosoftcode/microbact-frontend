@@ -1,0 +1,68 @@
+/* HERO SECTION */
+.hero {
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url("../assets/images/curve.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  text-align: center;
+  padding: 110px 20px 60px;
+}
+.hero-products img {
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+  display: block;
+
+  animation: moveUpOnce 1.5s ease-out forwards;
+}
+
+/* Down → Up (one time) */
+@keyframes moveUpOnce {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Subtitle */
+.hero h4 {
+  color: #1b5e20;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+/* Main Heading with Blue → Green Gradient */
+.hero h1 {
+  font-size: 48px;
+  margin: 15px 0;
+  background: linear-gradient(90deg, #1e90ff, #2ecc71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Description */
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+  color: #2e7d32;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+}

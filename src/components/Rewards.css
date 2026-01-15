@@ -1,0 +1,60 @@
+.rewards {
+ min-height: 100vh;
+  background: linear-gradient(90deg, #acfccd, #d3f5e1);
+  text-align: center;
+  padding: 40px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.rewards h2 {
+  font-size: 42px;
+  color: #5c88c4;
+  margin-bottom: 60px;
+  font-weight: 700;
+}
+
+/* GRID */
+.rewards-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+/* CARD */
+.reward-card {
+  background: #f8f8f8;
+  padding: 12px;
+}
+
+.reward-card img {
+  width: 100%;
+  display: block;
+}
+
+/* BORDER COLORS */
+.reward-card.green {
+  border: 6px solid #1b5e20;
+}
+
+.reward-card.blue {
+  border: 6px solid #5c88c4;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .rewards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .rewards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rewards h2 {
+    font-size: 30px;
+  }
+}
