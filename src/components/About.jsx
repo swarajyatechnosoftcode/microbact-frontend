@@ -1,9 +1,10 @@
 import aboutImg from "../assets/images/about.jpg";
+import "./About.css";
 
 export default function About() {
   return (
     <section style={s.section}>
-      <div style={s.container}>
+      <div className="about-section">
         {/* Image */}
         <div style={s.imageBox}>
           <img src={aboutImg} alt="About Microbact" style={s.image} />
@@ -40,14 +41,6 @@ const s = {
     padding: "40px 20px",
     background: "linear-gradient(90deg, #acfccd, #d3f5e1)",
   },
-  container: {
-    maxWidth: "1200px",
-    margin: "auto",
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr",
-    gap: "40px",
-    alignItems: "center",
-  },
   imageBox: {
     textAlign: "center",
   },
@@ -56,7 +49,9 @@ const s = {
     maxWidth: "500px",
     borderRadius: "6px",
   },
-  content: {},
+  content: {
+    padding: "0 10px",
+  },
   title: {
     fontSize: "32px",
     color: "#2E7D32",
