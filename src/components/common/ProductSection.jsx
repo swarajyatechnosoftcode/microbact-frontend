@@ -1,7 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight, Sparkles, ArrowRight, Star, Heart } from 'lucide-react';
+import blue_pouch from '../../images/products/blue_pouch.png'
+import green_pouch from '../../images/products/green_pouch.png'
+import pink_bottel from '../../images/products/pink_bottel.png'
+import pink_pouch from '../../images/products/pink_pouch.png'
 
-const ProductCard = ({ name, color, gradient, delay, productUrl, description, rating, reviews }) => {
+const ProductCard = ({ name, color, gradient, delay, productUrl, description, rating, reviews, image }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [isFavorite, setIsFavorite] = useState(false);
@@ -39,7 +43,7 @@ const ProductCard = ({ name, color, gradient, delay, productUrl, description, ra
           <div className={`absolute bottom-4 left-4 w-24 h-24 bg-white/10 rounded-full blur-xl transition-all duration-700 ${
             isHovered ? 'scale-150 animate-pulse' : 'animate-pulse'
           }`} style={{ animationDelay: '1s' }}></div>
-          <div className={`absolute top-1/2 left-1/2 w-16 h-16 bg-white/10 rounded-full blur-lg transition-all duration-700 ${
+          <div className={`absolute top-1/2 left-1/2 w-16 h-16 bg-white/10 rounded-full blur-xl transition-all duration-700 ${
             isHovered ? 'scale-150 animate-pulse' : 'animate-pulse'
           }`} style={{ animationDelay: '0.5s' }}></div>
         </div>
@@ -65,21 +69,6 @@ const ProductCard = ({ name, color, gradient, delay, productUrl, description, ra
           <Star className="absolute bottom-1/3 right-8 text-yellow-300/60 animate-float" size={14} style={{ animationDelay: '0.8s' }} />
         </div>
 
-        {/* Favorite Button */}
-        <button
-          onClick={toggleFavorite}
-          className={`absolute top-4 right-4 z-20 bg-white/30 backdrop-blur-md p-2.5 rounded-full transition-all duration-300 hover:scale-110 border-2 ${
-            isFavorite ? 'border-red-300 bg-white/50' : 'border-white/40'
-          }`}
-        >
-          <Heart 
-            size={20} 
-            className={`transition-all duration-300 ${
-              isFavorite ? 'fill-red-500 text-red-500 scale-110' : 'text-white'
-            }`}
-          />
-        </button>
-
         {/* Product Image Container */}
         <div className={`relative mb-4 transition-all duration-700 ${
           isHovered ? 'scale-110 -rotate-3' : ''
@@ -93,30 +82,15 @@ const ProductCard = ({ name, color, gradient, delay, productUrl, description, ra
           <div className={`relative bg-white rounded-2xl p-6 border-2 flex items-center justify-center h-56 shadow-lg transition-all duration-500 ${
             isHovered ? 'border-white/80 shadow-2xl' : 'border-white/50'
           }`}>
-            <div className="text-center">
-              {/* Product visual representation */}
-              <div className="relative">
-                {/* Product container with leaf design */}
-                <div className={`w-36 h-44 ${gradient} rounded-t-full relative mx-auto shadow-xl transition-all duration-500 ${
-                  isHovered ? 'shadow-2xl scale-105' : ''
-                }`}>
-                  {/* Cap */}
-                  <div className={`absolute -top-2 left-1/2 transform -translate-x-1/2 w-14 h-7 bg-gray-100 rounded-t-lg shadow-md transition-all duration-500 ${
-                    isHovered ? 'scale-110' : ''
-                  }`}></div>
-                  
-                  {/* Leaf decoration */}
-                  <div className={`absolute top-1/3 left-1/2 transform -translate-x-1/2 text-white/80 transition-all duration-500 ${
-                    isHovered ? 'scale-110 rotate-6' : ''
-                  }`}>
-                    <svg width="70" height="70" viewBox="0 0 60 60" className="drop-shadow-lg">
-                      <path d="M30 10 Q20 25, 15 35 Q20 32, 30 30 Q40 32, 45 35 Q40 25, 30 10" fill="white" opacity="0.6"/>
-                      <path d="M30 30 Q25 35, 20 42 Q25 40, 30 38" fill="white" opacity="0.4"/>
-                      <path d="M30 30 Q35 35, 40 42 Q35 40, 30 38" fill="white" opacity="0.4"/>
-                    </svg>
-                  </div>
-                </div>
-              </div>
+            <div className="text-center w-full h-full flex items-center justify-center">
+              {/* Actual Product Image */}
+              <img 
+                src={image} 
+                alt={name}
+                className={`max-w-full max-h-full object-contain transition-all duration-500 ${
+                  isHovered ? 'scale-110' : 'scale-100'
+                }`}
+              />
             </div>
           </div>
         </div>
@@ -199,7 +173,8 @@ export default function ProductSection() {
       productUrl: '/products/xyz',
       description: 'Natural ingredients for daily freshness and rejuvenation',
       rating: 4.8,
-      reviews: 234
+      reviews: 234,
+      image: blue_pouch
     },
     { 
       name: 'ABC', 
@@ -208,7 +183,8 @@ export default function ProductSection() {
       productUrl: '/products/abc',
       description: 'Premium formula for deep hydration and smooth texture',
       rating: 4.9,
-      reviews: 189
+      reviews: 189,
+      image: green_pouch
     },
     { 
       name: 'Demo', 
@@ -217,7 +193,8 @@ export default function ProductSection() {
       productUrl: '/products/demo',
       description: 'Gentle care with aromatic botanicals for sensitive skin',
       rating: 4.7,
-      reviews: 312
+      reviews: 312,
+      image: pink_bottel
     },
     { 
       name: 'Fresh', 
@@ -226,7 +203,8 @@ export default function ProductSection() {
       productUrl: '/products/fresh',
       description: 'Organic blend for ultimate nourishment and vitality',
       rating: 5.0,
-      reviews: 456
+      reviews: 456,
+      image: pink_pouch
     },
     { 
       name: 'Pure', 
@@ -235,7 +213,8 @@ export default function ProductSection() {
       productUrl: '/products/pure',
       description: 'Luxurious essence for radiant and healthy appearance',
       rating: 4.6,
-      reviews: 198
+      reviews: 198,
+      image: blue_pouch
     },
     { 
       name: 'Natural', 
@@ -244,7 +223,8 @@ export default function ProductSection() {
       productUrl: '/products/natural',
       description: 'Eco-friendly solution for sustainable beauty routine',
       rating: 4.8,
-      reviews: 267
+      reviews: 267,
+      image: green_pouch
     },
   ];
 
@@ -297,7 +277,7 @@ export default function ProductSection() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-emerald-50 py-16 px-4 overflow-hidden relative">
+    <div className="min-h-screen  py-16 px-4 overflow-hidden relative">
       {/* Animated background elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-10 left-10 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl animate-blob"></div>

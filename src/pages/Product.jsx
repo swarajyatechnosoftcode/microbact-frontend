@@ -145,7 +145,7 @@ const products = [
   },
   {
     id: 5,
-    name: 'Purple Dreams Cream',
+    name: 'Purple Dreams Night Cream',
     category: 'Night Care',
     color: 'bg-gradient-to-br from-indigo-500 via-purple-600 to-purple-700',
     gradient: 'from-indigo-400 to-purple-600',
@@ -245,6 +245,25 @@ const ProductCard = ({ product, onLearnMore }) => {
 
       {/* Shine Effect */}
       <div className={`absolute inset-0 bg-gradient-to-br from-white/0 via-white/40 to-white/0 transition-transform duration-1000 ${isHovered ? 'translate-x-full' : '-translate-x-full'}`}></div>
+
+      {/* Favorite Button */}
+      <button
+        onClick={toggleFavorite}
+        className={`absolute top-4 right-4 z-20 bg-white/30 backdrop-blur-md p-2.5 rounded-full transition-all duration-300 hover:scale-110 border-2 ${
+          isFavorite ? 'border-red-300 bg-white/50' : 'border-white/40'
+        }`}
+      >
+        <Heart
+          size={20}
+          className={`transition-all duration-300 ${isFavorite ? 'fill-red-500 text-red-500' : 'text-white'}`}
+        />
+      </button>
+
+      {/* Category Badge */}
+      <div className="absolute top-4 left-4 z-20 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
+        <span className="text-xs font-bold text-gray-700">{product.category}</span>
+      </div>
+
       {/* Image Carousel */}
       <div className="relative mb-6 bg-white rounded-2xl overflow-hidden h-64 shadow-lg">
         <img
@@ -292,7 +311,7 @@ const ProductCard = ({ product, onLearnMore }) => {
             <h3 className="text-2xl font-bold text-white mb-1">{product.name}</h3>
             <p className="text-white/90 text-sm">{product.shortDescription}</p>
           </div>
-          {/* <div className="text-2xl font-bold text-white">{product.price}</div> */}
+          <div className="text-2xl font-bold text-white">{product.price}</div>
         </div>
 
         {/* Rating */}
@@ -319,6 +338,9 @@ const ProductCard = ({ product, onLearnMore }) => {
           >
             <span>Learn More</span>
             <Sparkles size={18} className="group-hover:rotate-12 transition-transform duration-300" />
+          </button>
+          <button className="bg-white/20 backdrop-blur-sm text-white font-bold py-3 px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:bg-white/30">
+            <ShoppingCart size={20} />
           </button>
         </div>
       </div>
@@ -413,6 +435,9 @@ const ProductDetailModal = ({ product, isOpen, onClose }) => {
           <div className="bg-white overflow-y-auto p-8 max-h-[90vh]">
             {/* Product Header */}
             <div className="mb-6">
+              <div className="inline-block bg-gradient-to-r from-blue-500 to-green-500 text-white px-4 py-1 rounded-full text-sm font-semibold mb-3">
+                {product.category}
+              </div>
               <h2 className="text-4xl font-bold text-gray-800 mb-2">{product.name}</h2>
               <p className="text-gray-600 text-lg">{product.fullDescription}</p>
               
@@ -432,7 +457,7 @@ const ProductDetailModal = ({ product, isOpen, onClose }) => {
                     {product.rating} ({product.reviews} reviews)
                   </span>
                 </div>
-                {/* <div className="text-3xl font-bold text-gray-800">{product.price}</div> */}
+                <div className="text-3xl font-bold text-gray-800">{product.price}</div>
               </div>
             </div>
 
@@ -515,7 +540,7 @@ const ProductDetailModal = ({ product, isOpen, onClose }) => {
             </div>
 
             {/* Action Buttons */}
-            {/* <div className="mt-8 flex gap-4">
+            <div className="mt-8 flex gap-4">
               <button className="flex-1 bg-gradient-to-r from-blue-600 to-green-600 text-white font-bold py-4 px-6 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2 group">
                 <ShoppingCart size={20} className="group-hover:scale-110 transition-transform duration-300" />
                 <span>Add to Cart</span>
@@ -523,7 +548,7 @@ const ProductDetailModal = ({ product, isOpen, onClose }) => {
               <button className="bg-gray-100 text-gray-700 font-bold py-4 px-6 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:bg-gray-200 flex items-center justify-center gap-2">
                 <Heart size={20} />
               </button>
-            </div> */}
+            </div>
 
             {/* Features */}
             <div className="mt-6 grid grid-cols-3 gap-4">
@@ -548,7 +573,7 @@ const ProductDetailModal = ({ product, isOpen, onClose }) => {
 };
 
 // Main Product Component
-const Services = () => {
+const Product = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
@@ -728,4 +753,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Product;

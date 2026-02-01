@@ -270,7 +270,7 @@ export default function StatSection() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-emerald-50 py-16 px-4 overflow-hidden relative">
+    <div className="min-h-screen py-16 px-4 overflow-hidden relative">
       {/* Animated background blobs */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl animate-pulse"></div>
@@ -278,7 +278,7 @@ export default function StatSection() {
         <div className="absolute top-1/2 left-1/2 w-72 h-72 bg-teal-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="w-full mx-auto relative z-10">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-6xl font-bold mb-4">

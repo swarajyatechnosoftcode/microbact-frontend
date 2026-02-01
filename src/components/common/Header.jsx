@@ -31,8 +31,8 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Home', href: '/', hasDropdown: false },
     { name: 'About', href: '/about', hasDropdown: false },
-    { name: 'Products', href: '/products', hasDropdown: false },
-    { name: 'Services', href: '/services', hasDropdown: false },
+    // { name: 'Products', href: '/products', hasDropdown: false },
+    { name: 'Products', href: '/services', hasDropdown: false },
     { name: 'Contact', href: '/contact', hasDropdown: false },
   ];
 
@@ -63,11 +63,11 @@ export default function Navbar() {
             </div>
             <span 
               className={`text-xl sm:text-2xl font-bold tracking-tight transition-colors duration-500 ${
-                isScrolled ? 'text-white' : 'text-white drop-shadow-lg'
+                isScrolled ? 'text-white' : 'text-blue-600 hover:text-blue-700'
               }`}
               style={{ fontFamily: '"Outfit", sans-serif' }}
             >
-              Microbact
+              Microbact 
             </span>
           </a>
 
@@ -82,10 +82,10 @@ export default function Navbar() {
               >
                 {link.hasDropdown ? (
                   <button
-                    className={`relative px-4 py-2.5 text-[15px] font-medium tracking-wide transition-all duration-300 group flex items-center gap-1.5 ${
+                    className={`relative px-4 py-2.5 text-[15px] font-bold tracking-wide transition-all duration-300 group flex items-center gap-1.5 ${
                       isScrolled
                         ? 'text-white/90 hover:text-white'
-                        : 'text-white/95 hover:text-white'
+                        : 'text-blue-600 hover:text-blue-700'
                     }`}
                     style={{ 
                       fontFamily: '"DM Sans", sans-serif',
@@ -101,10 +101,10 @@ export default function Navbar() {
                 ) : (
                   <a
                     href={link.href}
-                    className={`relative px-4 py-2.5 text-[15px] font-medium tracking-wide transition-all duration-300 group ${
+                    className={`relative px-4 py-2.5 text-[15px] font-bold tracking-wide transition-all duration-300 group ${
                       isScrolled
                         ? 'text-white/90 hover:text-white'
-                        : 'text-white/95 hover:text-white'
+                        : 'text-blue-600 hover:text-blue-700'
                     }`}
                     style={{ 
                       fontFamily: '"DM Sans", sans-serif',
