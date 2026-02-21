@@ -36,48 +36,48 @@ const About = () => {
   const values = [
     {
       id: 1,
-      icon: Lightbulb,
-      title: 'Innovation',
-      description: 'We embrace creativity and continuously seek new ways to solve problems and improve our solutions.',
+      icon: Target,
+      title: 'Our Goals',
+      description: 'Protecting environment is our responsibility to survive better. Providing balanced environment for all living things by offering eco-friendly and naturally occurring bacterial solutions for sustainable environment.',
       color: 'blue',
       gradient: 'from-blue-500 to-blue-600'
     },
     {
       id: 2,
-      icon: Handshake,
-      title: 'Integrity',
-      description: 'Trust and transparency guide our relationships with customers, partners, and each other.',
+      icon: Lightbulb,
+      title: 'Our Vision',
+      description: 'Our vision is to continuously do research for disposing of waste without disturbing biodiversity and maintaining natural balance.',
       color: 'green',
       gradient: 'from-green-500 to-green-600'
     },
     {
       id: 3,
       icon: Award,
-      title: 'Excellence',
-      description: 'We set high standards and consistently deliver quality in everything we create and do.',
+      title: 'Quality Commitment',
+      description: 'DRDO certified and recognized by NIT Warangal, Telangana. Our focus on quality and quantity ensures effectiveness in pollution treatment.',
       color: 'blue',
       gradient: 'from-blue-600 to-cyan-600'
     }
   ];
 
-  const teamMembers = [
-    { id: 1, name: 'John Smith', position: 'CEO & Founder', icon: Briefcase },
-    { id: 2, name: 'Sarah Johnson', position: 'CTO', icon: Zap },
-    { id: 3, name: 'Mike Davis', position: 'Head of Design', icon: Palette },
-    { id: 4, name: 'Emily Chen', position: 'Marketing Director', icon: TrendingUp }
+  const products = [
+    { id: 1, name: 'ETP & STP Culture', description: 'Effluent & Sewage Treatment', icon: Briefcase },
+    { id: 2, name: 'Composting Culture', description: 'Organic Waste Treatment', icon: Zap },
+    { id: 3, name: 'Biogas Culture', description: 'Renewable Energy Solution', icon: Palette },
+    { id: 4, name: 'Aerobic & Anaerobic', description: 'Advanced Bio-Treatment', icon: TrendingUp }
   ];
 
   const stats = [
-    { id: 1, number: '500+', label: 'Happy Clients', icon: Users, color: 'blue' },
-    { id: 2, number: '1000+', label: 'Projects Completed', icon: Rocket, color: 'green' },
-    { id: 3, number: '10+', label: 'Years Experience', icon: Award, color: 'blue' }
+    { id: 1, number: '100%', label: 'Pollution-Free Goal', icon: Target, color: 'blue' },
+    { id: 2, number: 'DRDO', label: 'Certified Lab', icon: Award, color: 'green' },
+    { id: 3, number: 'NIT', label: 'Warangal Recognized', icon: Shield, color: 'blue' }
   ];
 
   const features = [
-    { icon: CheckCircle2, text: 'Customer First Approach' },
-    { icon: Shield, text: 'Secure & Reliable' },
-    { icon: Heart, text: 'Passionate Team' },
-    { icon: Zap, text: 'Fast Delivery' }
+    { icon: Shield, text: 'DRDO Certified' },
+    { icon: Award, text: 'NIT Warangal Recognized' },
+    { icon: Heart, text: 'Eco-Friendly Solutions' },
+    { icon: Zap, text: 'Bio-Culture Technology' }
   ];
 
   return (
@@ -114,8 +114,8 @@ const About = () => {
             About Us
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed animate-fadeInUp">
-            We're passionate about creating innovative solutions that make a difference in people's lives through technology and dedication.
+          <p className="text-xl md:text-2xl text-green-700 max-w-4xl mx-auto leading-relaxed animate-fadeInUp">
+            Microbact Bio Cultures Private Limited is a leading manufacturer and supplier specializing in microbial cultures and bio cultures. We are proud to be the authorized TOT holder for BIO Digester and Anaerobic bacteria generation plants from DRDO India. Additionally, we are accredited by NIT Warangal and IIT Roorkee, further cementing our commitment to technological excellence.
           </p>
           
           <div className="flex justify-center gap-6 mt-10 flex-wrap">
@@ -145,18 +145,15 @@ const About = () => {
               </div>
               
               <h2 className="text-5xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors duration-500">
-                Empowering Through Innovation
+                100% Pollution-Free India
               </h2>
               
               <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
                 <p>
-                  We strive to deliver exceptional products and services that empower our customers 
-                  to achieve their goals. Through innovation, dedication, and a customer-first approach, 
-                  we're building a better future.
+                  Established in 2023, our company serves Pan India, delivering high-quality products designed for a wide range of applications, including septic tanks, composting, odor control, and effluent treatment. We are dedicated to providing sustainable solutions through our flagship products like Microbact Septic Tank Bio Culture, G9 Odo Odor Culture, and ETP Bio Culture.
                 </p>
                 <p>
-                  Our commitment to excellence drives everything we do, from product development 
-                  to customer support, ensuring we exceed expectations at every turn.
+                  Led by our visionary CEO, Mr. Bharat Chavan, Microbact Bio Cultures operates with a team of skilled professionals, focusing on innovation and quality. With an annual turnover of approximately Rs. 0.5 to 2.5 Crore, we are committed to environmental sustainability and enhancing the efficiency of industrial operations through cutting-edge microbial solutions.
                 </p>
               </div>
               
@@ -165,13 +162,13 @@ const About = () => {
                   <div className="p-2 bg-blue-500 rounded-lg group-hover/item:scale-110 transition-transform duration-300">
                     <CheckCircle2 className="w-5 h-5 text-white" />
                   </div>
-                  <span className="font-semibold text-gray-700">Customer First</span>
+                  <span className="font-semibold text-gray-700">Eco-Friendly</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-green-50 rounded-xl hover:bg-green-100 transition-colors duration-300 group/item">
                   <div className="p-2 bg-green-500 rounded-lg group-hover/item:scale-110 transition-transform duration-300">
                     <Zap className="w-5 h-5 text-white" />
                   </div>
-                  <span className="font-semibold text-gray-700">Innovation Driven</span>
+                  <span className="font-semibold text-gray-700">Bio-Technology</span>
                 </div>
               </div>
             </div>
@@ -193,9 +190,9 @@ const About = () => {
         {/* Values Section */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="text-5xl font-bold text-gray-800 mb-4">Our Core Values</h2>
+            <h2 className="text-5xl font-bold text-gray-800 mb-4">Our Goals & Vision</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              The principles that guide us in everything we do
+              Committed to environmental protection and sustainable solutions
             </p>
           </div>
           
@@ -210,7 +207,7 @@ const About = () => {
                   className="group relative"
                   style={{ animationDelay: `${index * 150}ms` }}
                 >
-                  <div className={`bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 hover:shadow-3xl transition-all duration-700 border border-gray-100 cursor-pointer transform hover:-translate-y-4 hover:scale-105 relative overflow-hidden ${
+                  <div className={`bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 hover:shadow-3xl transition-all duration-700 border border-gray-100 cursor-pointer transform hover:-translate-y-4 hover:scale-105 relative overflow-hidden h-full flex flex-col ${
                     hoveredCard === value.id ? 'ring-4 ring-opacity-50' : ''
                   } ${
                     value.color === 'blue' ? 'hover:ring-blue-300' : 'hover:ring-green-300'
@@ -232,7 +229,7 @@ const About = () => {
                       {value.title}
                     </h3>
                     
-                    <p className="text-gray-600 leading-relaxed mb-6">
+                    <p className="text-gray-600 leading-relaxed mb-6 flex-grow">
                       {value.description}
                     </p>
                     
@@ -272,16 +269,16 @@ const About = () => {
           
           <div className="relative z-10">
             <div className="text-center mb-12">
-              <h2 className="text-5xl font-bold mb-4">Meet Our Team</h2>
-              <p className="text-xl text-blue-100">The talented people behind our success</p>
+              <h2 className="text-5xl font-bold mb-4">Product Overview</h2>
+              <p className="text-xl text-blue-100">Comprehensive solutions for liquid and solid waste pollution</p>
             </div>
             
             <div className="grid md:grid-cols-4 gap-8">
-              {teamMembers.map((member, index) => {
-                const IconComponent = member.icon;
+              {products.map((product, index) => {
+                const IconComponent = product.icon;
                 return (
                   <div
-                    key={member.id}
+                    key={product.id}
                     className="text-center group cursor-pointer"
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
@@ -304,10 +301,10 @@ const About = () => {
                     </div>
                     
                     <h3 className="font-bold text-xl mb-2 transform group-hover:scale-110 transition-transform duration-300">
-                      {member.name}
+                      {product.name}
                     </h3>
                     <p className="text-blue-100 group-hover:text-white transition-colors duration-300 font-medium">
-                      {member.position}
+                      {product.description}
                     </p>
                   </div>
                 );
@@ -398,9 +395,9 @@ const About = () => {
                     Address
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
-                    123 Innovation Street<br />
-                    Tech City, TC 12345<br />
-                    United States
+                    Ground Floor, Shop No 1, Gat No 12/1/2, Kasarsai Road, Sumit Mens Parlour, Nere<br />
+                    Pune, Maharashtra - 410506<br />
+                    India
                   </p>
                 </div>
               </div>
@@ -414,7 +411,7 @@ const About = () => {
                     Phone
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
-                    +1 (555) 123-4567<br />
+                    9518735229 / 9665755442<br />
                     Mon-Fri: 9:00 AM - 6:00 PM
                   </p>
                 </div>
@@ -429,8 +426,8 @@ const About = () => {
                     Email
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
-                    info@yourcompany.com<br />
-                    support@yourcompany.com
+                    Info.microbactbiocultures@gmail.com<br />
+                    support@microbactbiocultures.com
                   </p>
                 </div>
               </div>

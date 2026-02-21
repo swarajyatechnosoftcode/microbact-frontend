@@ -1,8 +1,9 @@
 .footer {
-  background-color: #0b5d1e; /* Dark green */
-  color: #dcedc8;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  color: #1e293b;
   padding: 50px 40px;
   font-family: Arial, sans-serif;
+  border-top: 1px solid #e2e8f0;
 }
 
 .footer-container {
@@ -13,7 +14,7 @@
 
 .footer-col h3,
 .footer-col h4 {
-  color: #ffffff;
+  color: #1e293b;
   margin-bottom: 15px;
 }
 
@@ -45,8 +46,8 @@
 }
 
 .social-icons span {
-  background: #ffffff;
-  color: #0b5d1e;
+  background: #e2e8f0;
+  color: #475569;
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -55,10 +56,12 @@
   justify-content: center;
   font-weight: bold;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .social-icons span:hover {
-  background: #a5d6a7;
+  background: #cbd5e1;
+  color: #334155;
 }
 
 .copyright {

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight, Sparkles, ArrowRight, Star, Heart } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import blue_pouch from '../../images/products/blue_pouch.png'
 import green_pouch from '../../images/products/green_pouch.png'
 import pink_bottel from '../../images/products/pink_bottel.png'
@@ -34,7 +35,7 @@ const ProductCard = ({ name, color, gradient, delay, productUrl, description, ra
     >
       <div className={`${color} rounded-3xl p-6 shadow-xl transition-all duration-500 transform ${
         isHovered ? '-translate-y-4 shadow-2xl scale-105' : ''
-      } cursor-pointer group relative overflow-hidden`}>
+      } cursor-pointer group relative overflow-hidden h-[32rem]`}>
         {/* Animated background particles */}
         <div className="absolute inset-0 overflow-hidden">
           <div className={`absolute top-4 right-4 w-20 h-20 bg-white/10 rounded-full blur-xl transition-all duration-700 ${
@@ -133,7 +134,7 @@ const ProductCard = ({ name, color, gradient, delay, productUrl, description, ra
             isHovered ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6 pointer-events-none'
           }`}>
             <button
-              onClick={handleLearnMore}
+              onClick={() => window.location.href = productUrl}
               className="w-full bg-white text-gray-800 font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:bg-gradient-to-r hover:from-blue-500 hover:to-emerald-500 hover:text-white flex items-center justify-center gap-2 group/btn"
             >
               <span className="transition-all duration-300">Learn More</span>
@@ -166,65 +167,66 @@ export default function ProductSection() {
   const scrollRef = useRef(null);
 
   const products = [
-    { 
-      name: 'XYZ', 
-      color: 'bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700', 
-      gradient: 'bg-gradient-to-br from-blue-400 to-blue-500',
-      productUrl: '/products/xyz',
-      description: 'Natural ingredients for daily freshness and rejuvenation',
+    
+    {
+      name: 'MicroBact Biogas Boom',
+      color: 'bg-gradient-to-br from-violet-400 via-purple-500 to-indigo-600',
+      gradient: 'bg-gradient-to-br from-violet-400 to-indigo-600',
+      productUrl: '/products/microbact-biogas-boom',
+      description: 'Biogas enhancer culture for hydrolysis, acidogenesis & acetogenesis',
       rating: 4.8,
-      reviews: 234,
-      image: blue_pouch
+      reviews: 120,
+      image: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop'
     },
-    { 
-      name: 'ABC', 
-      color: 'bg-gradient-to-br from-teal-400 via-cyan-500 to-cyan-600', 
-      gradient: 'bg-gradient-to-br from-teal-300 to-cyan-400',
-      productUrl: '/products/abc',
-      description: 'Premium formula for deep hydration and smooth texture',
+    {
+      name: 'MicroBact RE NIT WARANGAL',
+      color: 'bg-gradient-to-br from-cyan-400 via-blue-500 to-indigo-600',
+      gradient: 'bg-gradient-to-br from-cyan-400 to-indigo-600',
+      productUrl: '/products/microbact-re-nit-warangal',
+      description: 'NIT Warangal tested and approved product for nutrient removal',
       rating: 4.9,
-      reviews: 189,
-      image: green_pouch
+      reviews: 100,
+      image: 'https://images.unsplash.com/photo-1571875257727-256c39da42af?w=400&h=400&fit=crop'
     },
-    { 
-      name: 'Demo', 
-      color: 'bg-gradient-to-br from-pink-400 via-pink-500 to-pink-600', 
-      gradient: 'bg-gradient-to-br from-pink-300 to-pink-400',
-      productUrl: '/products/demo',
-      description: 'Gentle care with aromatic botanicals for sensitive skin',
+    {
+      name: 'MicroBact Septic Tank',
+      color: 'bg-gradient-to-br from-lime-400 via-green-500 to-emerald-600',
+      gradient: 'bg-gradient-to-br from-lime-400 to-emerald-600',
+      productUrl: '/products/microbact-septic-tank',
+      description: 'Bio culture for septic tank organic waste degradation',
       rating: 4.7,
-      reviews: 312,
-      image: pink_bottel
+      reviews: 150,
+      image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop'
     },
-    { 
-      name: 'Fresh', 
-      color: 'bg-gradient-to-br from-emerald-500 via-emerald-600 to-teal-600', 
-      gradient: 'bg-gradient-to-br from-emerald-400 to-emerald-500',
-      productUrl: '/products/fresh',
-      description: 'Organic blend for ultimate nourishment and vitality',
-      rating: 5.0,
-      reviews: 456,
-      image: pink_pouch
+    {
+      name: 'MicroBact DWTC',
+      color: 'bg-gradient-to-br from-emerald-500 via-emerald-600 to-teal-600',
+      gradient: 'bg-gradient-to-br from-emerald-400 to-teal-600',
+      productUrl: '/products/microbact-dwtc',
+      description: 'Natural biocatalyst for dissolving fat, oil, and grease',
+      rating: 4.9,
+      reviews: 180,
+      image: 'https://images.unsplash.com/photo-1571875257727-256c39da42af?w=400&h=400&fit=crop'
     },
-    { 
-      name: 'Pure', 
-      color: 'bg-gradient-to-br from-indigo-500 via-purple-600 to-purple-700', 
-      gradient: 'bg-gradient-to-br from-indigo-400 to-purple-500',
-      productUrl: '/products/pure',
-      description: 'Luxurious essence for radiant and healthy appearance',
-      rating: 4.6,
-      reviews: 198,
-      image: blue_pouch
-    },
-    { 
-      name: 'Natural', 
-      color: 'bg-gradient-to-br from-green-500 via-teal-600 to-teal-700', 
-      gradient: 'bg-gradient-to-br from-green-400 to-teal-500',
-      productUrl: '/products/natural',
-      description: 'Eco-friendly solution for sustainable beauty routine',
+    {
+      name: 'MicroBact Easy Compost',
+      color: 'bg-gradient-to-br from-amber-400 via-orange-500 to-red-500',
+      gradient: 'bg-gradient-to-br from-amber-400 to-red-500',
+      productUrl: '/products/microbact-easy-compost',
+      description: 'Powerful bio-culture for composting organic waste',
       rating: 4.8,
-      reviews: 267,
-      image: green_pouch
+      reviews: 140,
+      image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop'
+    },
+    {
+      name: 'MicroBact FOG',
+      color: 'bg-gradient-to-br from-indigo-500 via-purple-600 to-purple-700',
+      gradient: 'bg-gradient-to-br from-indigo-400 to-purple-600',
+      productUrl: '/products/microbact-fog',
+      description: 'Specialized formula for dissolving fat, oil, and grease',
+      rating: 4.6,
+      reviews: 160,
+      image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop'
     },
   ];
 
@@ -298,7 +300,9 @@ export default function ProductSection() {
               <Sparkles className="text-green-600 animate-bounce-slow animation-delay-500" size={36} />
             </div>
           </div>
-          <p className="text-gray-600 text-lg animate-fade-in animation-delay-300">Discover our bestselling items loved by thousands</p>
+          <p className="text-gray-600 text-lg animate-fade-in animation-delay-300 max-w-4xl mx-auto">
+            MicroBact offers a wide range of high-quality bio-culture products designed to enhance waste management and environmental sustainability. Our balanced biological formulas include specialized cultures for biogas enhancement, septic tank treatment, and composting solutions.
+          </p>
         </div>
 
         {/* Carousel Container */}

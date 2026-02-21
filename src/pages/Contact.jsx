@@ -67,9 +67,9 @@ const Contact = () => {
         {/* Contact Info Cards with Hover Effects */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           {[
-            { icon: Phone, title: 'Call Us', info: '+1 (555) 123-4567', subinfo: 'Mon-Fri 9am-6pm', gradient: 'from-blue-500 to-blue-600', bgColor: 'bg-blue-50', delay: '0s' },
-            { icon: Mail, title: 'Email Us', info: 'hello@company.com', subinfo: 'We reply within 24hrs', gradient: 'from-green-500 to-green-600', bgColor: 'bg-green-50', delay: '0.1s' },
-            { icon: MapPin, title: 'Visit Us', info: '123 Business Street', subinfo: 'New York, NY 10001', gradient: 'from-blue-500 to-green-500', bgColor: 'bg-gradient-to-br from-blue-50 to-green-50', delay: '0.2s' }
+            { icon: Phone, title: 'Call Us', info: '9518735229 / 9665755442', subinfo: 'Mon-Fri 9am-6pm', gradient: 'from-blue-500 to-blue-600', bgColor: 'bg-blue-50', delay: '0s' },
+            { icon: Mail, title: 'Email Us', info: 'Info.microbactbiocultures@gmail.com', subinfo: 'We reply within 24hrs', gradient: 'from-green-500 to-green-600', bgColor: 'bg-green-50', delay: '0.1s' },
+            { icon: MapPin, title: 'Visit Us', info: 'Ground Floor, Shop No 1, Gat No 12/1/2, Kasarsai Road, Sumit Mens Parlour, Nere', subinfo: 'Pune, Maharashtra - 410506, India', gradient: 'from-blue-500 to-green-500', bgColor: 'bg-gradient-to-br from-blue-50 to-green-50', delay: '0.2s' }
           ].map((item, idx) => (
             <div
               key={idx}

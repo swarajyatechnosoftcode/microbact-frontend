@@ -21,190 +21,407 @@ import {
 const products = [
   {
     id: 1,
-    name: 'Natural Glow Serum',
-    category: 'Skincare',
-    color: 'bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700',
-    gradient: 'from-blue-400 to-blue-600',
-    shortDescription: 'Radiant skin with natural botanicals',
-    fullDescription: 'Our signature Natural Glow Serum combines powerful antioxidants with natural botanicals to deliver visible results. Formulated with vitamin C, hyaluronic acid, and plant extracts for ultimate skin rejuvenation.',
-    price: '$49.99',
+    name: 'MicroBact Biogas Boom',
+    category: 'Biogas Enhancement',
+    color: 'bg-gradient-to-br from-violet-400 via-purple-500 to-indigo-600',
+    gradient: 'from-violet-400 to-indigo-600',
+    shortDescription: 'Biogas enhancer culture for hydrolysis, acidogenesis & acetogenesis',
+    fullDescription: 'MicroBact Boom is Biogas Enhancer Culture which helps in hydrolysis Acidogensis & Acetogenesis. MicroBact-Boom Enhance Growth of Existing Methenogensis processes with the help of probiotics anaerobic bacteria, macro and micro nutrients. Highly Useful in Bio-Gas Production in Anaerobic Biogas and UASB, Digrster & Reacter.',
+    price: 'Contact for pricing',
     rating: 4.8,
-    reviews: 234,
+    reviews: 120,
     images: [
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop',
       'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop'
+      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop'
     ],
     benefits: [
-      'Reduces fine lines and wrinkles',
-      'Brightens skin tone',
-      'Deeply hydrates',
-      'Suitable for all skin types'
+      'Instant & Fast Release of Enzymes',
+      'Control Odor Fast',
+      'Improve Start-up & Recovery From Shock Loading',
+      'Visible Enhance in Biogas Production',
+      'Acting as fast as Digester remove scum',
+      'Fast recovery of Methenogenic Microorganisms'
     ],
-    ingredients: ['Vitamin C', 'Hyaluronic Acid', 'Green Tea Extract', 'Aloe Vera'],
+    ingredients: ['Probiotic Blend', 'Anaerobic Bacteria', 'Macro & Micro Nutrients'],
     precautions: [
-      'For external use only',
-      'Avoid direct contact with eyes',
-      'Discontinue use if irritation occurs',
-      'Store in a cool, dry place'
+      'Used without any chemicals mixing for better results',
+      'Non Hazardous and non-flammable, 100% organic and Nontoxic',
+      'Store in cool place, avoid direct sunlight',
+      'Keep in dry airtight container to prevent activation'
     ],
-    usage: 'Apply 2-3 drops to clean face morning and evening. Gently massage until fully absorbed.'
+    usage: 'Add to biogas digesters and reactors. Follow specific dosage guidelines for optimal biogas production.'
   },
   {
     id: 2,
-    name: 'Hydra Fresh Cream',
-    category: 'Moisturizer',
-    color: 'bg-gradient-to-br from-teal-400 via-cyan-500 to-cyan-600',
-    gradient: 'from-teal-400 to-cyan-600',
-    shortDescription: 'Deep hydration for 24 hours',
-    fullDescription: 'Experience long-lasting moisture with our Hydra Fresh Cream. This lightweight formula penetrates deep into skin layers, providing intense hydration without feeling greasy.',
-    price: '$39.99',
+    name: 'MicroBact RE NIT WARANGAL',
+    category: 'Wastewater Treatment',
+    color: 'bg-gradient-to-br from-cyan-400 via-blue-500 to-indigo-600',
+    gradient: 'from-cyan-400 to-indigo-600',
+    shortDescription: 'NIT Warangal tested and approved product for nutrient removal',
+    fullDescription: 'MicroBact RE NIT WARANGAL is a tested and approved product by National Institute of Technology Warangal. It shows excellent results in 15 days reduction in total Kjeldahl nitrogen, ammonia nitrogen, fecal phosphate up to 90-95%. Algae degradation is very fast, 100% increase in COD, BOD reduction. Improves Biological Nutrient Removal in two step process: Oxidation and Denitrification, CO2+NH3+CH4, Endogenous decay respiration, Aerobic fermentation (methanol). Biological nitrogen removal in the form ammonia and Organic Nitrogen biologically by two steps.',
+    price: 'Contact for pricing',
     rating: 4.9,
-    reviews: 189,
+    reviews: 100,
     images: [
-      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop',
       'https://images.unsplash.com/photo-1571875257727-256c39da42af?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop',
       'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop'
     ],
     benefits: [
-      '24-hour hydration',
-      'Non-greasy formula',
-      'Strengthens skin barrier',
-      'Dermatologist tested'
+      '90-95% reduction in nitrogen and phosphate',
+      'Fast algae degradation',
+      '100% increase in COD, BOD reduction',
+      'Improves Biological Nutrient Removal',
+      'Two-step biological process',
+      'NIT Warangal tested and approved'
     ],
-    ingredients: ['Ceramides', 'Peptides', 'Niacinamide', 'Shea Butter'],
+    ingredients: ['Heterotrophic Bacteria', 'Denitrifying Bacteria', 'Phosphorus Accumulating Bacteria'],
     precautions: [
-      'Patch test before first use',
-      'Keep away from children',
-      'Avoid if allergic to ingredients',
-      'Use within 12 months of opening'
+      'For wastewater treatment applications',
+      'Store in cool, dry place',
+      'Avoid direct sunlight',
+      'Keep in airtight container'
     ],
-    usage: 'Apply to face and neck after cleansing. Use morning and night for best results.'
+    usage: 'Apply in wastewater treatment systems for nutrient removal. Dosage based on system requirements and testing.'
   },
   {
     id: 3,
-    name: 'Rose Radiance Oil',
-    category: 'Treatment',
-    color: 'bg-gradient-to-br from-pink-400 via-pink-500 to-pink-600',
-    gradient: 'from-pink-400 to-pink-600',
-    shortDescription: 'Luxurious facial oil for glow',
-    fullDescription: 'Indulge in the luxurious Rose Radiance Oil, crafted with pure rosehip and essential oils. This nourishing blend rejuvenates tired skin and restores natural radiance.',
-    price: '$59.99',
+    name: 'MicroBact Septic Tank',
+    category: 'Septic Tank Treatment',
+    color: 'bg-gradient-to-br from-lime-400 via-green-500 to-emerald-600',
+    gradient: 'from-lime-400 to-emerald-600',
+    shortDescription: 'Bio culture for septic tank organic waste degradation',
+    fullDescription: 'MicroBact septic tank is designed for degradation of organic waste from septic tank these microbes produce different types of enzymes like amylase, protease, lipase, cellulose, etc. MicroBact SEPTIC TANK works in both aerobic&anaerobic conditions. Best result oriented bio culture highly used in SEPTIC TANK, SINKS PRIVET/PUBLIC TOILETS, DRAINAGE SYSTEM COMPOSITING TOILETS BIO TOILETS, FICAL SLUDGE.',
+    price: 'Contact for pricing',
     rating: 4.7,
-    reviews: 312,
+    reviews: 150,
     images: [
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop',
       'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop'
+      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop'
     ],
     benefits: [
-      'Anti-aging properties',
-      'Improves skin elasticity',
-      'Fades dark spots',
-      'Natural aromatherapy'
+      'Reduction in sludge production',
+      'Brake down solid fats & smooth operation',
+      'Reduce sludge production',
+      'Reduce foul odor',
+      'Improve plant stability',
+      'Reduces H2S, ammonia, and nitrates',
+      'No use any other chemicals, reduce blockage of draine system, reduce frequency of septic tank fillings, no genetically modified organisms'
     ],
-    ingredients: ['Rosehip Oil', 'Jojoba Oil', 'Vitamin E', 'Rose Essential Oil'],
+    ingredients: ['Enzyme Producing Bacteria', 'Aerobic & Anaerobic Microbes'],
     precautions: [
-      'Perform patch test first',
-      'Not for acne-prone skin',
-      'Keep away from heat',
-      'Consult dermatologist if pregnant'
+      'Please avoid the use of chemicals, disinfectants, with use MicroBact septic tank for better and effective results',
+      'Non-Hazardous and non-flammable, 100% organic and Nontoxic',
+      'Store in cool place, avoid direct sunlight',
+      'Keep in dry airtight container to prevent activation'
     ],
-    usage: 'Apply 3-4 drops to damp skin after cleansing. Massage gently in upward motions.'
+    usage: 'Apply in septic tanks, toilets, drainage systems, and bio toilets. Dosage varies by application and system size.'
   },
   {
     id: 4,
-    name: 'Green Tea Cleanser',
-    category: 'Cleanser',
+    name: 'MicroBact DWTC',
+    category: 'FOG Treatment',
     color: 'bg-gradient-to-br from-emerald-500 via-emerald-600 to-teal-600',
     gradient: 'from-emerald-400 to-teal-600',
-    shortDescription: 'Gentle purifying formula',
-    fullDescription: 'Our Green Tea Cleanser gently removes impurities while delivering powerful antioxidants. Leaves skin feeling refreshed, balanced, and ready for the day.',
-    price: '$29.99',
-    rating: 5.0,
-    reviews: 456,
+    shortDescription: 'Natural biocatalyst for dissolving fat, oil, and grease',
+    fullDescription: 'MicroBact DWTC is a natural biocatalyst made via fermentative process. MicroBact DWTC consists of selected consortium of facultative bacteria, enzymes, nutrients & co-factor, it contain high concentration of enzyme & microbes to dissolve fat, oil, grease. Highly recommended for use to dissolve fat oil & grease in systems WWTP/PHARMA/DAIRY/HOTEL/MUNICIPAL/INDUSTRIAL WASTEWATER treatment.',
+    price: 'Contact for pricing',
+    rating: 4.9,
+    reviews: 180,
     images: [
       'https://images.unsplash.com/photo-1571875257727-256c39da42af?w=400&h=400&fit=crop',
       'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop',
       'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop'
     ],
     benefits: [
-      'Deep cleansing action',
-      'Reduces inflammation',
-      'Balances oil production',
-      'pH balanced formula'
+      'Reduce 100% degrade fat oil grease after application',
+      'Reduce sludge production',
+      'Reduce BOD, COD, TSS biological nutrients',
+      'Fast-acting & 100% natural & nontoxic',
+      'Improves MLSS, biomass in the system',
+      'Reduces the volatile organic compound',
+      'Enhance nitrogen & phosphorus removal'
     ],
-    ingredients: ['Green Tea Extract', 'Salicylic Acid', 'Glycerin', 'Chamomile'],
+    ingredients: ['Facultative Bacteria', 'Enzymes', 'Nutrients & Co-factors'],
     precautions: [
-      'Rinse thoroughly after use',
-      'Avoid contact with eyes',
-      'Use twice daily maximum',
-      'May cause dryness in sensitive skin'
+      'Please avoid the use of chemicals, disinfectants, chlorine, water paints, kerosene',
+      'After discontinuing chemical products, wait 3 days before using MicroBact DWTC',
+      'Non-hazardous and non-flammable, 100% organic and non-toxic',
+      'Store in cool place, avoid direct sunlight',
+      'Keep in dry airtight container to prevent activation'
     ],
-    usage: 'Wet face, apply cleanser, massage in circular motions for 30 seconds, rinse thoroughly.'
+    usage: 'Apply in wastewater treatment systems prone to fat, oil, and grease accumulation. Dosage based on system requirements.'
   },
   {
     id: 5,
-    name: 'Purple Dreams Cream',
-    category: 'Night Care',
-    color: 'bg-gradient-to-br from-indigo-500 via-purple-600 to-purple-700',
-    gradient: 'from-indigo-400 to-purple-600',
-    shortDescription: 'Overnight skin renewal',
-    fullDescription: 'Wake up to transformed skin with Purple Dreams Night Cream. This intensive overnight treatment works while you sleep to repair, renew, and rejuvenate.',
-    price: '$54.99',
-    rating: 4.6,
-    reviews: 198,
+    name: 'MicroBact Easy Compost',
+    category: 'Composting',
+    color: 'bg-gradient-to-br from-amber-400 via-orange-500 to-red-500',
+    gradient: 'from-amber-400 to-red-500',
+    shortDescription: 'Powerful bio-culture for composting organic waste',
+    fullDescription: 'MicroBact EASY COMPOST is the best combination of bacteria, actinomycetes fungi which is powerful full to composting process in food waste, garden waste, agriculture waste organic waste with control foul odor. Best result oriented bio culture highly use in biodegradable municipal waste, society waste hotel, restaurant, poultry waste agriculture, forest parks, garden school college food industries. sugar industries just simple process use 1 gm. culture for 1kg food waste mix it properly if needed add some water turn in to week for aeration you will get good compost into 4 to 6 weeks.',
+    price: 'Contact for pricing',
+    rating: 4.8,
+    reviews: 140,
     images: [
       'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop',
       'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop',
       'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop'
     ],
     benefits: [
-      'Repairs skin overnight',
-      'Boosts collagen production',
-      'Reduces pore appearance',
-      'Luxurious texture'
+      'MicroBact easy compost is a very effective bio-culture',
+      'Control a foul odor, control fly, mosquito',
+      'compost is enriched with macro and micronutrients',
+      'adds lost microflora in soil with the exceptional high microbial count',
+      'No Use Any Other Chemicals, Reduce Blockage Of Draine System, Reduce Frequency Of Septic Tank Fillings, No Genetically Modified Organisms'
     ],
-    ingredients: ['Retinol', 'Peptide Complex', 'Lavender Oil', 'Collagen'],
+    ingredients: ['Bacteria', 'Actinomycetes', 'Fungi'],
     precautions: [
-      'Use sunscreen during day',
-      'Start with small amount',
-      'Not for sensitive skin',
-      'Avoid use during pregnancy'
+      'if initially, waste is wet or moist then spared MicroBact EASY COMPOST Culture directly on waste mix it properly the first week rise temp 50 to 70 °c if not reach optimum temp.please add some culture to reach optimum temp. if moisture decrease then maintains moisture by spray water',
+      'Non-Hazardous and non-flammable, 100% organic and Nontoxic',
+      'Store in cool place, avoid direct sunlight',
+      'Keep in dry airtight container to prevent activation'
     ],
-    usage: 'Apply generously to clean face before bed. Allow to absorb fully. Use 3-4 times per week.'
+    usage: 'Use 1 gm culture for 1kg food waste, mix properly, add water if needed, turn weekly for aeration. Good compost in 4-6 weeks.'
   },
   {
     id: 6,
-    name: 'Eco Pure Toner',
-    category: 'Toner',
-    color: 'bg-gradient-to-br from-green-500 via-teal-600 to-teal-700',
-    gradient: 'from-green-400 to-teal-600',
-    shortDescription: 'Balancing botanical mist',
-    fullDescription: 'Refresh and balance your skin with Eco Pure Toner. This alcohol-free formula preps skin for better absorption of serums and moisturizers.',
-    price: '$24.99',
-    rating: 4.8,
-    reviews: 267,
+    name: 'MicroBact FOG',
+    category: 'FOG Treatment',
+    color: 'bg-gradient-to-br from-indigo-500 via-purple-600 to-purple-700',
+    gradient: 'from-indigo-400 to-purple-600',
+    shortDescription: 'Specialized formula for dissolving fat, oil, and grease',
+    fullDescription: 'MicroBact FOG is natural biocatalyst made via fermentative process. MicroBact-FOG consists of selected consortium of bacteria, enzymes, nutrients & co-factor, it contain high concentration of enzyme & microbes to dissolve fat, oil, grease. Highly recommended for use to dissolve fat oil & grease in systems WWTP/PHARMA/DAIRY/HOTEL/MUNICIPAL /INDUSTRIAL WASTE WATER, treatment. Reducing just using start MicroBact FOG working in hotel grease trap slaughterhouse ETP.',
+    price: 'Contact for pricing',
+    rating: 4.6,
+    reviews: 160,
+    images: [
+      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop'
+    ],
+    benefits: [
+      'Reduce 100% degrade fat oil grease after application of MicroBact FOG',
+      'Reduce sludge production',
+      'Reduce BOD, COD, TSS biological nutrients',
+      'Fast-acting & 100% natural & nontoxic',
+      'Improves MLSS, biomass in the system',
+      'Reduces the volatile organic compound',
+      'Enhance nitrogen & phosphorus removal'
+    ],
+    ingredients: ['Bacteria Consortium', 'Enzymes', 'Nutrients & Co-factors'],
+    precautions: [
+      'Please avoid the use of chemicals, disinfectants, chlorine, water paints, kerosene after discontinuing of use of chemical products. After 3 days you should use MicroBact-FOG for better and effective results',
+      'Non-Hazardous and non-flammable, 100% organic and Nontoxic',
+      'Store in cool place, avoid direct sunlight',
+      'Keep in dry airtight container to prevent activation'
+    ],
+    usage: 'Apply in wastewater systems to dissolve FOG. Dosage based on system requirements.'
+  },
+  {
+    id: 7,
+    name: 'MicroBact ODOR Culture',
+    category: 'Odor Control',
+    color: 'bg-gradient-to-br from-rose-400 via-pink-500 to-red-500',
+    gradient: 'from-rose-400 to-red-500',
+    shortDescription: 'Natural biocatalyst for odor reduction in waste systems',
+    fullDescription: 'MicroBact ODOR is a natural biocatalyst made via fermentative process. MicroBact-odor consists of a selected consortium of bacteria, enzymes, nutrients & co-factor, it contains a high concentration of enzyme & microbes. Highly recommended for use to reduce odor in systems WWTP/PHARMA/DAIRY/MUNICIPAL/INDUSTRIAL WASTE WATER treatment and COMPOSTING SYSTEMS.',
+    price: 'Contact for pricing',
+    rating: 4.5,
+    reviews: 130,
     images: [
       'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop'
+    ],
+    benefits: [
+      'Reduce 100% odor after application',
+      'Increase composting speed',
+      'Reduce sludge production',
+      'Reduce foul odor from leachate',
+      'Fast-acting & 100% natural & non-toxic',
+      'Reduces the volatile organic compound',
+      'Improves MLSS, biomass in the system',
+      'Enhance nitrogen & phosphorus removal'
+    ],
+    ingredients: ['Bacteria Consortium', 'Enzymes', 'Nutrients & Co-factors'],
+    precautions: [
+      'Please avoid the use of chemicals, disinfectants, chlorine, water paints, kerosene',
+      'After discontinuing chemical products, wait 3 days before using MicroBact-ODOR',
+      'Non-Hazardous and non-flammable, 100% organic and Nontoxic',
+      'Store in cool place, avoid direct sunlight',
+      'Keep in dry airtight container to prevent activation'
+    ],
+    usage: 'Apply in wastewater treatment systems, composting systems, landfills, and anaerobic digesters to reduce odor.'
+  },
+
+  {
+    id: 8,
+    name: 'MicroBact STP Culture',
+    category: 'Wastewater Treatment',
+    color: 'bg-gradient-to-br from-purple-400 via-purple-500 to-indigo-600',
+    gradient: 'from-purple-400 to-indigo-600',
+    shortDescription: 'Designed for degradation of organic waste in wastewater',
+    fullDescription: 'MicroBact-STP is designed for the degradation of organic waste in wastewater along with suspended solids removal of COD, BOD, sludge from wastewater. Highly recommended for use in aerobic & Facultative anaerobic systems like MMBR, SBR, ASP, ETP, WWTP/Fruits Vegetable/ FOOD / PHARMA/DAIRY/ MUNICIPAL /INDUSTRIAL WASTE WATER treatment.',
+    price: 'Contact for pricing',
+    rating: 4.9,
+    reviews: 150,
+    images: [
       'https://images.unsplash.com/photo-1571875257727-256c39da42af?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop'
+    ],
+    benefits: [
+      'Reduce COD. BOD',
+      'Reduce suspended solids',
+      'Reduce sludge production',
+      'Reduce foul ODOR',
+      'Improve plant stability',
+      'Reduces H2S, ammonia, and nitrates',
+      'Improves MLSS, biomass in the system',
+      'Enhance nitrogen & phosphorus removal'
+    ],
+    ingredients: ['Aerobic & Facultative Anaerobic Microbes'],
+    precautions: [
+      'Please avoid the use of chemicals, disinfectants, chlorine, water paints, kerosene after discontinuing of use of chemical products. After 3 days you should use MicroBact-STP for better and effective results',
+      'Non-Hazardous and non-flammable, 100% organic and Nontoxic',
+      'Store in cool place, avoid direct sunlight',
+      'Keep in dry airtight container to prevent activation'
+    ],
+    usage: 'Apply in aerobic & facultative anaerobic systems like MMBR, SBR, ASP, ETP, WWTP for wastewater treatment.'
+  },
+  {
+    id: 9,
+    name: 'MicroBact AnaeroBact',
+    category: 'Wastewater Treatment',
+    color: 'bg-gradient-to-br from-green-400 via-green-500 to-teal-600',
+    gradient: 'from-green-400 to-teal-600',
+    shortDescription: 'Anaerobic bacterial culture for wastewater treatment',
+    fullDescription: 'MicroBact Anaerobic Bacterial with enzymes & co factors developed under complete Anaerobic process useful for Anaerobic conditions in waste water, USBR, Bio Reactor, Septic Tank Treatment Biogas enhance with hassle free solution for you. Used in 30 to 50 gm/KLD in waste water treatments, USBR, Bio Reactor, Septic Tank Treatment Biogas Treatment organic waste decomposing solution.',
+    price: 'Contact for pricing',
+    rating: 4.7,
+    reviews: 140,
+    images: [
+      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop'
+    ],
+    benefits: [
+      'Control foul smell in anaerobic systems',
+      'Enhance anaerobic process treatment for organic load',
+      '100% output with natural environmental care',
+      'Dramatic change in anaerobic process'
+    ],
+    ingredients: ['Anaerobic Bacterial Consortia', 'Enzymes & Co-factors'],
+    precautions: [
+      'Avoid direct naked hand use or inhaling',
+      'For effectiveness, dissolve in tap water before 1 hour & use',
+      'Non Hazardous and non-flammable, 100% organic and Nontoxic',
+      'Store in cool place, avoid direct sunlight',
+      'Keep in dry airtight container to prevent activation'
+    ],
+    usage: 'Use 30 to 50 gm/KLD in wastewater treatments, USBR, Bio Reactor, Septic Tank Treatment, Biogas Treatment, organic waste decomposing.'
+  },
+  {
+    id: 10,
+    name: 'MicroBact AeroBact',
+    category: 'Wastewater Treatment',
+    color: 'bg-gradient-to-br from-orange-400 via-red-500 to-red-600',
+    gradient: 'from-orange-400 to-red-600',
+    shortDescription: 'Aerobic bacteria consortia for wastewater treatment',
+    fullDescription: 'MicroBact Bio cultures are continuously working in Bio Cultures Innovation. Now we have developed new Bacterial product AeroBact, it\'s fully purly consortia of Aerobic Bacteria with co factors. It helps in removal of pollutant as well as enhance aerobic process with hassle free. AeroBact is genuine sequence of aerobic bacteria which is in 2 billion/gm. They are used in STP process like MBR, MBBR, SBR, ASP. process ETP due to highly active strains it treats 30 to 50 gm/KLD water use in dairy, pharma, agriculture, municipal CETPS, treatment.',
+    price: 'Contact for pricing',
+    rating: 4.8,
+    reviews: 160,
+    images: [
+      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop',
       'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop'
     ],
     benefits: [
-      'Balances pH levels',
-      'Tightens pores',
-      'Alcohol-free formula',
-      'Refreshes instantly'
+      'Immediately active bacteria start working after addition of AeroBact',
+      'Treat organic load easily & hassle free',
+      'Developed favourable condition in wastewater',
+      'MLSS improves, COD, BOD removes',
+      'Addition of extra chemical is zero',
+      'Removal of Nutrients & algae degradation sincreased'
     ],
-    ingredients: ['Witch Hazel', 'Rose Water', 'Cucumber Extract', 'Aloe Vera'],
+    ingredients: ['Aerobic Bacteria Consortia', 'Co-factors'],
     precautions: [
-      'Shake well before use',
-      'Store upright',
-      'Close cap tightly after use',
-      'Test on small area first'
+      'Avoid direct naked hand use or inhaling for effectiveness increase dissolve in tap water before 1hr & use',
+      'Non-hazardous and non-flammable, 100% organic and non-toxic',
+      'Store in cool place, avoid direct sunlight',
+      'Keep in dry airtight container to prevent activation'
     ],
-    usage: 'Spray on cotton pad or directly on face after cleansing. Pat gently to absorb.'
-  }
+    usage: 'Use in STP processes like MBR, MBBR, SBR, ASP, ETP. Treats 30 to 50 gm/KLD water in dairy, pharma, agriculture, municipal CETPs.'
+  },
+  {
+    id: 11,
+    name: 'MicroBact AnaeroBact',
+    category: 'Wastewater Treatment',
+    color: 'bg-gradient-to-br from-teal-400 via-teal-500 to-cyan-600',
+    gradient: 'from-teal-400 to-cyan-600',
+    shortDescription: 'Anaerobic bacterial culture for wastewater treatment',
+    fullDescription: 'MicroBact Anaerobic Bacterial with enzymes & co factor\'s developed under complete Anaerobic process useful for Anaerobic conditions in waste water, USBR, Bio Reactor, Septic Tank Treatment Biogas enhance with hassle free solution for you. Those are complete Anaerobic Bacterial consortia use is 30 to 50 gm/KLD in waste water treatments, USBR, Bio Reactor, Septic Tank Treatment Biogas Treatment organic waste decomposing solution.',
+    price: 'Contact for pricing',
+    rating: 4.7,
+    reviews: 140,
+    images: [
+      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop'
+    ],
+    benefits: [
+      'Anaerobic system having not source of oxygen, so its foul smell controlled by AnaeroBact',
+      'Enhance Anaerobic Process treatment four organic load gives you 100% out put with natural environmental care',
+      'Dramatic change in your Anaerobic process'
+    ],
+    ingredients: ['Anaerobic Bacterial Consortia', 'Enzymes & Co-factors'],
+    precautions: [
+      'Avoid direct naked hand use or inhaling for effectiveness increase dissolve in tap water before 1hr & use',
+      'Non Hazardous and non-flammable, 100% organic and Nontoxic',
+      'Store in cool place, avoid direct sunlight',
+      'Keep in dry airtight container to prevent activation'
+    ],
+    usage: 'Use 30 to 50 gm/KLD in waste water treatments, USBR, Bio Reactor, Septic Tank Treatment, Biogas Treatment, organic waste decomposing solution.'
+  },
+ 
+  {
+    id: 12,
+    name: 'MicroBact शेती संजीवनी',
+    category: 'Agriculture',
+    color: 'bg-gradient-to-br from-lime-400 via-green-500 to-emerald-600',
+    gradient: 'from-lime-400 to-emerald-600',
+    shortDescription: 'Bio-culture for crop growth and soil health',
+    fullDescription: 'MicroBact We are happy to introduce our new product शेती संजीवनी is a combination of Bacteria + Fungi + NPK + Nutrient for any crop who does not having growth, health, flowering, root development, soil condition development remove pathogenic content from soil & availability nutrient for crop with the help of Bacteria Fungi crop showing results within 36 to 48 hrs. Drenching of plant in 15 days once or inline drip or flood water irrigation or foliar spray.',
+    price: 'Contact for pricing',
+    rating: 4.9,
+    reviews: 120,
+    images: [
+      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop'
+    ],
+    benefits: [
+      'Its change soil biology with physics',
+      'Crop shows immediate impact',
+      'Available nutrients from soil fast recovery in to plant and soil also',
+      'Stop pathogens which are available in soil or water',
+      'Root shows development in absorption & white root formation',
+      'Change the crop morphological characters'
+    ],
+    ingredients: ['Bacteria', 'Fungi', 'NPK', 'Nutrients'],
+    precautions: [
+      'Avoid direct contact with powder. Avoid smelling wash the hand before & after use of the संजीवनी for better results dissolve it in water & allow for 1hr & then use',
+      'Non-hazardous product, 100% Organic compound & non-toxic, its environment friendly product',
+      'Store in cool place, avoid direct sunlight',
+      'Keep in dry airtight container to prevent activation'
+    ],
+    usage: 'Drenching of plant in 15 days once or inline drip or flood water irrigation or foliar spray.'
+  },
+
 ];
 
 // Product Card Component with Image Carousel
@@ -230,13 +447,14 @@ const ProductCard = ({ product, onLearnMore }) => {
 
   return (
     <div
-      className={`group relative ${product.color} rounded-3xl p-6 shadow-xl transition-all duration-700 cursor-pointer overflow-hidden`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      style={{
-        transform: isHovered ? 'translateY(-12px) scale(1.02)' : 'translateY(0) scale(1)',
-      }}
-    >
+  className={`group relative ${product.color} rounded-3xl p-6 shadow-xl transition-all duration-700 cursor-pointer overflow-hidden flex flex-col h-[500px]`}
+  onMouseEnter={() => setIsHovered(true)}
+  onMouseLeave={() => setIsHovered(false)}
+  style={{
+    transform: isHovered ? 'translateY(-12px) scale(1.02)' : 'translateY(0) scale(1)',
+  }}
+>
+
       {/* Animated Background Effects */}
       <div className="absolute inset-0 overflow-hidden">
         <div className={`absolute top-4 right-4 w-32 h-32 bg-white/10 rounded-full blur-2xl transition-all duration-700 ${isHovered ? 'scale-150' : ''}`}></div>
@@ -512,6 +730,165 @@ const ProductDetailModal = ({ product, isOpen, onClose }) => {
                   ))}
                 </div>
               )}
+
+              {activeTab === 'msds' && (
+                <div className="space-y-6 animate-fadeIn">
+                  {/* Company Information */}
+                  
+
+                  {/* Health Hazards */}
+                  <div className="bg-red-50 rounded-2xl p-6">
+                    <h4 className="font-bold text-gray-800 mb-4">Health Hazard Data</h4>
+                    <div className="space-y-3 text-sm">
+                      <p><strong>Routes of Entry:</strong> {msdsData.healthHazards.routes}</p>
+                      <p><strong>Inhalation:</strong> {msdsData.healthHazards.inhalation}</p>
+                      <p><strong>Ingestion:</strong> {msdsData.healthHazards.ingestion}</p>
+                      <p><strong>Skin/Eye Contact:</strong> {msdsData.healthHazards.skinEye}</p>
+                      <p><strong>Acute Effects:</strong> {msdsData.healthHazards.acute}</p>
+                      <p><strong>Chronic Effects:</strong> {msdsData.healthHazards.chronic}</p>
+                      <p><strong>Carcinogenicity:</strong> {msdsData.healthHazards.carcinogenicity}</p>
+                      <p><strong>Medical Conditions:</strong> {msdsData.healthHazards.medicalConditions}</p>
+                    </div>
+                  </div>
+
+                  {/* First Aid */}
+                  <div className="bg-yellow-50 rounded-2xl p-6">
+                    <h4 className="font-bold text-gray-800 mb-4">Emergency & First Aid Procedures</h4>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Skin Contact:</strong> {msdsData.firstAid.skin}</p>
+                      <p><strong>Eye Contact:</strong> {msdsData.firstAid.eye}</p>
+                      <p><strong>Inhalation:</strong> {msdsData.firstAid.inhalation}</p>
+                      <p><strong>Ingestion:</strong> {msdsData.firstAid.ingestion}</p>
+                    </div>
+                  </div>
+
+                  {/* Fire & Explosion Hazards */}
+                  <div className="bg-orange-50 rounded-2xl p-6">
+                    <h4 className="font-bold text-gray-800 mb-4">Fire & Explosion Hazard Data</h4>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Flash Point:</strong> {msdsData.fireHazards.flashPoint}</p>
+                      <p><strong>Extinguishing Media:</strong> {msdsData.fireHazards.extinguishingMedia}</p>
+                      <p><strong>Special Fire Fighting:</strong> {msdsData.fireHazards.specialFireFighting}</p>
+                      <p><strong>Unusual Hazards:</strong> {msdsData.fireHazards.unusualHazards}</p>
+                      <p><strong>Flammable Limits:</strong> {msdsData.fireHazards.flammableLimits}</p>
+                      <p><strong>Special Equipment:</strong> {msdsData.fireHazards.specialEquipment}</p>
+                    </div>
+                  </div>
+
+                  {/* Accidental Release */}
+                  <div className="bg-purple-50 rounded-2xl p-6">
+                    <h4 className="font-bold text-gray-800 mb-4">Accidental Release Measures</h4>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Personal Precautions:</strong> {msdsData.accidentalRelease.personalPrecautions}</p>
+                      <p><strong>Methods for Cleanup:</strong> {msdsData.accidentalRelease.cleanup}</p>
+                      <p><strong>Fire Hazards:</strong> {msdsData.accidentalRelease.fireHazards}</p>
+                    </div>
+                  </div>
+
+                  {/* Handling & Storage */}
+                  <div className="bg-indigo-50 rounded-2xl p-6">
+                    <h4 className="font-bold text-gray-800 mb-4">Handling & Storage</h4>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Handling:</strong> {msdsData.handlingStorage.handling}</p>
+                      <p><strong>Waste Disposal:</strong> {msdsData.handlingStorage.wasteDisposal}</p>
+                      <p><strong>Storage:</strong> {msdsData.handlingStorage.storage}</p>
+                      <p><strong>Notes:</strong> {msdsData.handlingStorage.notes}</p>
+                    </div>
+                  </div>
+
+                  {/* Protective Measures */}
+                  <div className="bg-teal-50 rounded-2xl p-6">
+                    <h4 className="font-bold text-gray-800 mb-4">Personal Protective Measures</h4>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Respiratory Protection:</strong> {msdsData.protectiveMeasures.respiratory}</p>
+                      <p><strong>Ventilation:</strong> {msdsData.protectiveMeasures.ventilation}</p>
+                      <p><strong>Eye Protection:</strong> {msdsData.protectiveMeasures.eyeProtection}</p>
+                      <p><strong>Work/Hygienic Practices:</strong> {msdsData.protectiveMeasures.workPractices}</p>
+                      <p><strong>Protective Gloves:</strong> {msdsData.protectiveMeasures.gloves}</p>
+                      <p><strong>Other Protective Clothing:</strong> {msdsData.protectiveMeasures.clothing}</p>
+                    </div>
+                  </div>
+
+                  {/* Physical & Chemical Characteristics */}
+                  <div className="bg-cyan-50 rounded-2xl p-6">
+                    <h4 className="font-bold text-gray-800 mb-4">Physical & Chemical Characteristics</h4>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Boiling Point:</strong> {msdsData.physicalChemical.boilingPoint}</p>
+                      <p><strong>Vapor Pressure:</strong> {msdsData.physicalChemical.vaporPressure}</p>
+                      <p><strong>Vapor Density:</strong> {msdsData.physicalChemical.vaporDensity}</p>
+                      <p><strong>Solubility in Water:</strong> {msdsData.physicalChemical.solubility}</p>
+                      <p><strong>Specific Gravity:</strong> {msdsData.physicalChemical.specificGravity}</p>
+                      <p><strong>Melting Point:</strong> {msdsData.physicalChemical.meltingPoint}</p>
+                      <p><strong>Evaporation Rate:</strong> {msdsData.physicalChemical.evaporationRate}</p>
+                      <p><strong>Appearance & Odor:</strong> {msdsData.physicalChemical.appearance}</p>
+                      <p><strong>pH:</strong> {msdsData.physicalChemical.ph}</p>
+                    </div>
+                  </div>
+
+                  {/* Stability & Reactivity */}
+                  <div className="bg-lime-50 rounded-2xl p-6">
+                    <h4 className="font-bold text-gray-800 mb-4">Stability & Reactivity Data</h4>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Stability:</strong> {msdsData.stabilityReactivity.stability}</p>
+                      <p><strong>Incompatibility:</strong> {msdsData.stabilityReactivity.incompatibility}</p>
+                      <p><strong>Hazardous Polymerization:</strong> {msdsData.stabilityReactivity.polymerization}</p>
+                      <p><strong>Conditions to Avoid:</strong> {msdsData.stabilityReactivity.conditionsToAvoid}</p>
+                      <p><strong>Hazardous Decomposition:</strong> {msdsData.stabilityReactivity.decomposition}</p>
+                    </div>
+                  </div>
+
+                  {/* Toxicological Information */}
+                  <div className="bg-pink-50 rounded-2xl p-6">
+                    <h4 className="font-bold text-gray-800 mb-4">Toxicological Information</h4>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Oral Toxicity:</strong> {msdsData.toxicological.oral}</p>
+                      <p><strong>Dermal Toxicity:</strong> {msdsData.toxicological.dermal}</p>
+                      <p><strong>Inhalation Toxicity:</strong> {msdsData.toxicological.inhalation}</p>
+                    </div>
+                  </div>
+
+                  {/* Ecological Information */}
+                  <div className="bg-emerald-50 rounded-2xl p-6">
+                    <h4 className="font-bold text-gray-800 mb-4">Ecological Information</h4>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Ecological Information:</strong> {msdsData.ecological.information}</p>
+                      <p><strong>Ecotoxicity Information:</strong> {msdsData.ecological.ecotoxicity}</p>
+                    </div>
+                  </div>
+
+                  {/* Disposal Considerations */}
+                  <div className="bg-gray-50 rounded-2xl p-6">
+                    <h4 className="font-bold text-gray-800 mb-4">Disposal Considerations</h4>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Disposal Method:</strong> {msdsData.disposal.method}</p>
+                      <p><strong>Dermal Toxicity:</strong> {msdsData.disposal.dermal}</p>
+                    </div>
+                  </div>
+
+                  {/* Transport Information */}
+                  <div className="bg-amber-50 rounded-2xl p-6">
+                    <h4 className="font-bold text-gray-800 mb-4">Transport Information</h4>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>UN Number:</strong> {msdsData.transport.unNumber}</p>
+                      <p><strong>UN Proper Shipping Name:</strong> {msdsData.transport.properShippingName}</p>
+                      <p><strong>Dangerous Goods Class:</strong> {msdsData.transport.dangerousGoodsClass}</p>
+                      <p><strong>HazChem Code:</strong> {msdsData.transport.hazChemCode}</p>
+                    </div>
+                  </div>
+
+                  {/* Regulatory Information */}
+                  <div className="bg-rose-50 rounded-2xl p-6">
+                    <h4 className="font-bold text-gray-800 mb-4">Regulatory Information</h4>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Symbol:</strong> {msdsData.regulatory.symbol}</p>
+                      <p><strong>R-Phrases:</strong> {msdsData.regulatory.rPhrases}</p>
+                      <p><strong>S-Phrases:</strong> {msdsData.regulatory.sPhrases}</p>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+
             </div>
 
             {/* Action Buttons */}
