@@ -16,6 +16,23 @@ import {
   Award,
   Zap
 } from 'lucide-react';
+import allP from '../images/products/all_p.png';
+import areobact from '../images/products/areobact.png';
+import biogasBoom from '../images/products/biogas_boom.png';
+import bluePouch from '../images/products/blue_pouch.png';
+import biologicalSolution from '../images/products/boiological_solution.png';
+import dwtc from '../images/products/dwtc.png';
+import easycompost from '../images/products/easycompost.png';
+import greenPouch from '../images/products/green_pouch.png';
+import odourCulture from '../images/products/odour_culture.png';
+import odur_culture_sticker from '../images/products/odur_culture_sticker.jpg';
+
+import pinkBottel from '../images/products/pink_bottel.png';
+import pinkPouch from '../images/products/pink_pouch.png';
+import septicTank from '../images/products/Septic_tank.png';
+import septicTankSticker from '../images/products/septic_tank_sticker.jpg';
+import sheti_sanjivni_sticker from '../images/products/sheti_sanjivni_sticker.jpg';
+import stp_culture_sticker from '../images/products/stp_culture_sticker.jpg';
 
 // Product Data
 const products = [
@@ -30,11 +47,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.8,
     reviews: 120,
-    images: [
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop'
-    ],
+    images: [biogasBoom],
     benefits: [
       'Instant & Fast Release of Enzymes',
       'Control Odor Fast',
@@ -63,11 +76,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.9,
     reviews: 100,
-    images: [
-      'https://images.unsplash.com/photo-1571875257727-256c39da42af?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop'
-    ],
+    images: [biologicalSolution, bluePouch, greenPouch],
     benefits: [
       '90-95% reduction in nitrogen and phosphate',
       'Fast algae degradation',
@@ -96,11 +105,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.7,
     reviews: 150,
-    images: [
-      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop'
-    ],
+    images: [septicTank ,septicTankSticker],
     benefits: [
       'Reduction in sludge production',
       'Brake down solid fats & smooth operation',
@@ -130,11 +135,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.9,
     reviews: 180,
-    images: [
-      'https://images.unsplash.com/photo-1571875257727-256c39da42af?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop'
-    ],
+    images: [dwtc    ],
     benefits: [
       'Reduce 100% degrade fat oil grease after application',
       'Reduce sludge production',
@@ -165,11 +166,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.8,
     reviews: 140,
-    images: [
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop'
-    ],
+    images: [easycompost],
     benefits: [
       'MicroBact easy compost is a very effective bio-culture',
       'Control a foul odor, control fly, mosquito',
@@ -197,11 +194,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.6,
     reviews: 160,
-    images: [
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop'
-    ],
+    images: [pinkBottel, pinkPouch, allP],
     benefits: [
       'Reduce 100% degrade fat oil grease after application of MicroBact FOG',
       'Reduce sludge production',
@@ -231,11 +224,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.5,
     reviews: 130,
-    images: [
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop'
-    ],
+    images: [odourCulture ,odur_culture_sticker],
     benefits: [
       'Reduce 100% odor after application',
       'Increase composting speed',
@@ -268,11 +257,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.9,
     reviews: 150,
-    images: [
-      'https://images.unsplash.com/photo-1571875257727-256c39da42af?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop'
-    ],
+    images: [stp_culture_sticker],
     benefits: [
       'Reduce COD. BOD',
       'Reduce suspended solids',
@@ -303,11 +288,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.7,
     reviews: 140,
-    images: [
-      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop'
-    ],
+    images: [areobact ],
     benefits: [
       'Control foul smell in anaerobic systems',
       'Enhance anaerobic process treatment for organic load',
@@ -335,11 +316,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.8,
     reviews: 160,
-    images: [
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop'
-    ],
+    images: [areobact],
     benefits: [
       'Immediately active bacteria start working after addition of AeroBact',
       'Treat organic load easily & hassle free',
@@ -368,11 +345,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.7,
     reviews: 140,
-    images: [
-      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop'
-    ],
+    images: [areobact, biogasBoom, septicTank],
     benefits: [
       'Anaerobic system having not source of oxygen, so its foul smell controlled by AnaeroBact',
       'Enhance Anaerobic Process treatment four organic load gives you 100% out put with natural environmental care',
@@ -399,11 +372,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.9,
     reviews: 120,
-    images: [
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop'
-    ],
+    images: [greenPouch, sheti_sanjivni_sticker],
     benefits: [
       'Its change soil biology with physics',
       'Crop shows immediate impact',
@@ -465,12 +434,14 @@ const ProductCard = ({ product, onLearnMore }) => {
       <div className={`absolute inset-0 bg-gradient-to-br from-white/0 via-white/40 to-white/0 transition-transform duration-1000 ${isHovered ? 'translate-x-full' : '-translate-x-full'}`}></div>
       {/* Image Carousel */}
       <div className="relative mb-6 bg-white rounded-2xl overflow-hidden h-64 shadow-lg">
-        <img
-          src={product.images[currentImageIndex]}
-          alt={product.name}
-          className="w-full h-full object-cover transition-transform duration-700"
-          style={{ transform: isHovered ? 'scale(1.1)' : 'scale(1)' }}
-        />
+        <div className="w-full h-full bg-white flex items-center justify-center">
+          <img
+            src={product.images[currentImageIndex]}
+            alt={product.name}
+            className="w-full h-full object-contain transition-transform duration-700"
+            style={{ transform: isHovered ? 'scale(1.1)' : 'scale(1)' }}
+          />
+        </div>
 
         {/* Image Navigation Arrows */}
         {product.images.length > 1 && (
@@ -588,11 +559,13 @@ const ProductDetailModal = ({ product, isOpen, onClose }) => {
 
             {/* Image Carousel */}
             <div className="relative w-full h-full flex items-center justify-center z-10">
-              <img
-                src={product.images[currentImageIndex]}
-                alt={product.name}
-                className="max-w-full max-h-[500px] object-contain rounded-2xl shadow-2xl"
-              />
+              <div className="w-full h-full bg-white rounded-2xl flex items-center justify-center">
+                <img
+                  src={product.images[currentImageIndex]}
+                  alt={product.name}
+                  className="max-w-full max-h-[500px] object-contain rounded-2xl shadow-2xl"
+                />
+              </div>
 
               {/* Navigation Arrows */}
               {product.images.length > 1 && (

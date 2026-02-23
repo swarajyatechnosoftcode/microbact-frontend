@@ -16,6 +16,18 @@ import {
   Award,
   Zap
 } from 'lucide-react';
+import allP from '../images/products/all_p.png';
+import areobact from '../images/products/areobact.png';
+import biogasBoom from '../images/products/biogas_boom.png';
+import bluePouch from '../images/products/blue_pouch.png';
+import biologicalSolution from '../images/products/boiological_solution.png';
+import dwtc from '../images/products/dwtc.png';
+import easycompost from '../images/products/easycompost.png';
+import greenPouch from '../images/products/green_pouch.png';
+import odourCulture from '../images/products/odour_culture.png';
+import pinkBottel from '../images/products/pink_bottel.png';
+import pinkPouch from '../images/products/pink_pouch.png';
+import septicTank from '../images/products/Septic_tank.png';
 
 // Product Data
 const products = [
@@ -30,11 +42,7 @@ const products = [
     price: '$49.99',
     rating: 4.8,
     reviews: 234,
-    images: [
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop'
-    ],
+    images: [bluePouch, biologicalSolution, dwtc],
     benefits: [
       'Reduces fine lines and wrinkles',
       'Brightens skin tone',
@@ -61,11 +69,7 @@ const products = [
     price: '$39.99',
     rating: 4.9,
     reviews: 189,
-    images: [
-      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1571875257727-256c39da42af?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop'
-    ],
+    images: [greenPouch, easycompost, areobact],
     benefits: [
       '24-hour hydration',
       'Non-greasy formula',
@@ -92,11 +96,7 @@ const products = [
     price: '$59.99',
     rating: 4.7,
     reviews: 312,
-    images: [
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop'
-    ],
+    images: [pinkBottel, pinkPouch, odourCulture],
     benefits: [
       'Anti-aging properties',
       'Improves skin elasticity',
@@ -123,11 +123,7 @@ const products = [
     price: '$29.99',
     rating: 5.0,
     reviews: 456,
-    images: [
-      'https://images.unsplash.com/photo-1571875257727-256c39da42af?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop'
-    ],
+    images: [biogasBoom, septicTank, allP],
     benefits: [
       'Deep cleansing action',
       'Reduces inflammation',
@@ -154,11 +150,7 @@ const products = [
     price: '$54.99',
     rating: 4.6,
     reviews: 198,
-    images: [
-      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop'
-    ],
+    images: [odourCulture, dwtc, biologicalSolution],
     benefits: [
       'Repairs skin overnight',
       'Boosts collagen production',
@@ -185,11 +177,7 @@ const products = [
     price: '$24.99',
     rating: 4.8,
     reviews: 267,
-    images: [
-      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1571875257727-256c39da42af?w=400&h=400&fit=crop',
-      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop'
-    ],
+    images: [areobact, easycompost, greenPouch],
     benefits: [
       'Balances pH levels',
       'Tightens pores',
