@@ -19,35 +19,41 @@ import {
 import allP from '../images/products/all_p.png';
 import areobact from '../images/products/areobact.png';
 import biogasBoom from '../images/products/biogas_boom.png';
+import biogass_boom_sticker from '../images/products/biogass_boom_sticker.jpg';
 import bluePouch from '../images/products/blue_pouch.png';
 import biologicalSolution from '../images/products/boiological_solution.png';
 import dwtc from '../images/products/dwtc.png';
+import Dwtc_sticker from '../images/products/Dwtc_sticker.jpg';
 import easycompost from '../images/products/easycompost.png';
+import easy_compost_sticker from '../images/products/easy_compost_sticker.jpg';
 import greenPouch from '../images/products/green_pouch.png';
 import odourCulture from '../images/products/odour_culture.png';
 import odur_culture_sticker from '../images/products/odur_culture_sticker.jpg';
-
+import fog_sticker from '../images/products/fog_sticker.jpg'
 import pinkBottel from '../images/products/pink_bottel.png';
 import pinkPouch from '../images/products/pink_pouch.png';
 import septicTank from '../images/products/Septic_tank.png';
 import septicTankSticker from '../images/products/septic_tank_sticker.jpg';
 import sheti_sanjivni_sticker from '../images/products/sheti_sanjivni_sticker.jpg';
 import stp_culture_sticker from '../images/products/stp_culture_sticker.jpg';
+import AeroBact_sticker from '../images/products/AeroBact_sticker.jpg'
+import anareobact_sticker from '../images/products/anareobact_sticker.jpg'
 
 // Product Data
 const products = [
   {
+    // color ligth blue 
     id: 1,
     name: 'MicroBact Biogas Boom',
     category: 'Biogas Enhancement',
-    color: 'bg-gradient-to-br from-violet-400 via-purple-500 to-indigo-600',
-    gradient: 'from-violet-400 to-indigo-600',
+  color: 'bg-gradient-to-br from-cyan-400 via-blue-500 to-indigo-600',
+    gradient: 'from-cyan-400 to-indigo-600',
     shortDescription: 'Biogas enhancer culture for hydrolysis, acidogenesis & acetogenesis',
     fullDescription: 'MicroBact Boom is Biogas Enhancer Culture which helps in hydrolysis Acidogensis & Acetogenesis. MicroBact-Boom Enhance Growth of Existing Methenogensis processes with the help of probiotics anaerobic bacteria, macro and micro nutrients. Highly Useful in Bio-Gas Production in Anaerobic Biogas and UASB, Digrster & Reacter.',
     price: 'Contact for pricing',
     rating: 4.8,
     reviews: 120,
-    images: [biogasBoom],
+    images: [biogasBoom , biogass_boom_sticker],
     benefits: [
       'Instant & Fast Release of Enzymes',
       'Control Odor Fast',
@@ -66,6 +72,7 @@ const products = [
     usage: 'Add to biogas digesters and reactors. Follow specific dosage guidelines for optimal biogas production.'
   },
   {
+    // color light green and blue 
     id: 2,
     name: 'MicroBact RE NIT WARANGAL',
     category: 'Wastewater Treatment',
@@ -95,10 +102,11 @@ const products = [
     usage: 'Apply in wastewater treatment systems for nutrient removal. Dosage based on system requirements and testing.'
   },
   {
+    //  color yellow
     id: 3,
     name: 'MicroBact Septic Tank',
     category: 'Septic Tank Treatment',
-    color: 'bg-gradient-to-br from-lime-400 via-green-500 to-emerald-600',
+    color: 'bg-gradient-to-br from-yellow-600 via-yellow-500 to-yellow-400',
     gradient: 'from-lime-400 to-emerald-600',
     shortDescription: 'Bio culture for septic tank organic waste degradation',
     fullDescription: 'MicroBact septic tank is designed for degradation of organic waste from septic tank these microbes produce different types of enzymes like amylase, protease, lipase, cellulose, etc. MicroBact SEPTIC TANK works in both aerobic&anaerobic conditions. Best result oriented bio culture highly used in SEPTIC TANK, SINKS PRIVET/PUBLIC TOILETS, DRAINAGE SYSTEM COMPOSITING TOILETS BIO TOILETS, FICAL SLUDGE.',
@@ -125,17 +133,18 @@ const products = [
     usage: 'Apply in septic tanks, toilets, drainage systems, and bio toilets. Dosage varies by application and system size.'
   },
   {
+    // color light blue
     id: 4,
     name: 'MicroBact DWTC',
     category: 'FOG Treatment',
-    color: 'bg-gradient-to-br from-emerald-500 via-emerald-600 to-teal-600',
+    color: 'bg-gradient-to-br from-blue-500 via-navy-600 to-teal-600',
     gradient: 'from-emerald-400 to-teal-600',
     shortDescription: 'Natural biocatalyst for dissolving fat, oil, and grease',
     fullDescription: 'MicroBact DWTC is a natural biocatalyst made via fermentative process. MicroBact DWTC consists of selected consortium of facultative bacteria, enzymes, nutrients & co-factor, it contain high concentration of enzyme & microbes to dissolve fat, oil, grease. Highly recommended for use to dissolve fat oil & grease in systems WWTP/PHARMA/DAIRY/HOTEL/MUNICIPAL/INDUSTRIAL WASTEWATER treatment.',
     price: 'Contact for pricing',
     rating: 4.9,
     reviews: 180,
-    images: [dwtc    ],
+    images: [dwtc  ,Dwtc_sticker  ],
     benefits: [
       'Reduce 100% degrade fat oil grease after application',
       'Reduce sludge production',
@@ -156,6 +165,7 @@ const products = [
     usage: 'Apply in wastewater treatment systems prone to fat, oil, and grease accumulation. Dosage based on system requirements.'
   },
   {
+    // color orange and red 
     id: 5,
     name: 'MicroBact Easy Compost',
     category: 'Composting',
@@ -166,7 +176,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.8,
     reviews: 140,
-    images: [easycompost],
+    images: [easycompost,easy_compost_sticker],
     benefits: [
       'MicroBact easy compost is a very effective bio-culture',
       'Control a foul odor, control fly, mosquito',
@@ -184,17 +194,18 @@ const products = [
     usage: 'Use 1 gm culture for 1kg food waste, mix properly, add water if needed, turn weekly for aeration. Good compost in 4-6 weeks.'
   },
   {
+    // color orange 
     id: 6,
     name: 'MicroBact FOG',
     category: 'FOG Treatment',
-    color: 'bg-gradient-to-br from-indigo-500 via-purple-600 to-purple-700',
-    gradient: 'from-indigo-400 to-purple-600',
+  color: 'bg-gradient-to-br from-amber-400 via-orange-500 to-red-500',
+    gradient: 'from-amber-400 to-red-500',
     shortDescription: 'Specialized formula for dissolving fat, oil, and grease',
     fullDescription: 'MicroBact FOG is natural biocatalyst made via fermentative process. MicroBact-FOG consists of selected consortium of bacteria, enzymes, nutrients & co-factor, it contain high concentration of enzyme & microbes to dissolve fat, oil, grease. Highly recommended for use to dissolve fat oil & grease in systems WWTP/PHARMA/DAIRY/HOTEL/MUNICIPAL /INDUSTRIAL WASTE WATER, treatment. Reducing just using start MicroBact FOG working in hotel grease trap slaughterhouse ETP.',
     price: 'Contact for pricing',
     rating: 4.6,
     reviews: 160,
-    images: [pinkBottel, pinkPouch, allP],
+    images: [fog_sticker],
     benefits: [
       'Reduce 100% degrade fat oil grease after application of MicroBact FOG',
       'Reduce sludge production',
@@ -214,10 +225,11 @@ const products = [
     usage: 'Apply in wastewater systems to dissolve FOG. Dosage based on system requirements.'
   },
   {
+    // color light green 
     id: 7,
     name: 'MicroBact ODOR Culture',
     category: 'Odor Control',
-    color: 'bg-gradient-to-br from-rose-400 via-pink-500 to-red-500',
+    color: 'bg-gradient-to-br from-green-600 via-green-500 to-green-700',
     gradient: 'from-rose-400 to-red-500',
     shortDescription: 'Natural biocatalyst for odor reduction in waste systems',
     fullDescription: 'MicroBact ODOR is a natural biocatalyst made via fermentative process. MicroBact-odor consists of a selected consortium of bacteria, enzymes, nutrients & co-factor, it contains a high concentration of enzyme & microbes. Highly recommended for use to reduce odor in systems WWTP/PHARMA/DAIRY/MUNICIPAL/INDUSTRIAL WASTE WATER treatment and COMPOSTING SYSTEMS.',
@@ -247,10 +259,11 @@ const products = [
   },
 
   {
+    // color navy
     id: 8,
     name: 'MicroBact STP Culture',
     category: 'Wastewater Treatment',
-    color: 'bg-gradient-to-br from-purple-400 via-purple-500 to-indigo-600',
+    color: 'bg-gradient-to-br from-sky-700 via-blue-900 to-cyan-800',
     gradient: 'from-purple-400 to-indigo-600',
     shortDescription: 'Designed for degradation of organic waste in wastewater',
     fullDescription: 'MicroBact-STP is designed for the degradation of organic waste in wastewater along with suspended solids removal of COD, BOD, sludge from wastewater. Highly recommended for use in aerobic & Facultative anaerobic systems like MMBR, SBR, ASP, ETP, WWTP/Fruits Vegetable/ FOOD / PHARMA/DAIRY/ MUNICIPAL /INDUSTRIAL WASTE WATER treatment.',
@@ -277,18 +290,19 @@ const products = [
     ],
     usage: 'Apply in aerobic & facultative anaerobic systems like MMBR, SBR, ASP, ETP, WWTP for wastewater treatment.'
   },
-  {
+  { 
+    // color gren yellow
     id: 9,
     name: 'MicroBact AnaeroBact',
     category: 'Wastewater Treatment',
-    color: 'bg-gradient-to-br from-green-400 via-green-500 to-teal-600',
+    color: 'bg-gradient-to-br from-lime-700 via-lime-500 to-lime-900',
     gradient: 'from-green-400 to-teal-600',
     shortDescription: 'Anaerobic bacterial culture for wastewater treatment',
     fullDescription: 'MicroBact Anaerobic Bacterial with enzymes & co factors developed under complete Anaerobic process useful for Anaerobic conditions in waste water, USBR, Bio Reactor, Septic Tank Treatment Biogas enhance with hassle free solution for you. Used in 30 to 50 gm/KLD in waste water treatments, USBR, Bio Reactor, Septic Tank Treatment Biogas Treatment organic waste decomposing solution.',
     price: 'Contact for pricing',
     rating: 4.7,
     reviews: 140,
-    images: [areobact ],
+    images: [anareobact_sticker],
     benefits: [
       'Control foul smell in anaerobic systems',
       'Enhance anaerobic process treatment for organic load',
@@ -306,17 +320,18 @@ const products = [
     usage: 'Use 30 to 50 gm/KLD in wastewater treatments, USBR, Bio Reactor, Septic Tank Treatment, Biogas Treatment, organic waste decomposing.'
   },
   {
+    // color purple
     id: 10,
     name: 'MicroBact AeroBact',
     category: 'Wastewater Treatment',
-    color: 'bg-gradient-to-br from-orange-400 via-red-500 to-red-600',
+    color: 'bg-gradient-to-br from-purple-400 via-purple-500 to-violet-600',
     gradient: 'from-orange-400 to-red-600',
     shortDescription: 'Aerobic bacteria consortia for wastewater treatment',
     fullDescription: 'MicroBact Bio cultures are continuously working in Bio Cultures Innovation. Now we have developed new Bacterial product AeroBact, it\'s fully purly consortia of Aerobic Bacteria with co factors. It helps in removal of pollutant as well as enhance aerobic process with hassle free. AeroBact is genuine sequence of aerobic bacteria which is in 2 billion/gm. They are used in STP process like MBR, MBBR, SBR, ASP. process ETP due to highly active strains it treats 30 to 50 gm/KLD water use in dairy, pharma, agriculture, municipal CETPS, treatment.',
     price: 'Contact for pricing',
     rating: 4.8,
     reviews: 160,
-    images: [areobact],
+    images: [areobact ,AeroBact_sticker],
     benefits: [
       'Immediately active bacteria start working after addition of AeroBact',
       'Treat organic load easily & hassle free',
@@ -334,34 +349,10 @@ const products = [
     ],
     usage: 'Use in STP processes like MBR, MBBR, SBR, ASP, ETP. Treats 30 to 50 gm/KLD water in dairy, pharma, agriculture, municipal CETPs.'
   },
-  {
-    id: 11,
-    name: 'MicroBact AnaeroBact',
-    category: 'Wastewater Treatment',
-    color: 'bg-gradient-to-br from-teal-400 via-teal-500 to-cyan-600',
-    gradient: 'from-teal-400 to-cyan-600',
-    shortDescription: 'Anaerobic bacterial culture for wastewater treatment',
-    fullDescription: 'MicroBact Anaerobic Bacterial with enzymes & co factor\'s developed under complete Anaerobic process useful for Anaerobic conditions in waste water, USBR, Bio Reactor, Septic Tank Treatment Biogas enhance with hassle free solution for you. Those are complete Anaerobic Bacterial consortia use is 30 to 50 gm/KLD in waste water treatments, USBR, Bio Reactor, Septic Tank Treatment Biogas Treatment organic waste decomposing solution.',
-    price: 'Contact for pricing',
-    rating: 4.7,
-    reviews: 140,
-    images: [areobact, biogasBoom, septicTank],
-    benefits: [
-      'Anaerobic system having not source of oxygen, so its foul smell controlled by AnaeroBact',
-      'Enhance Anaerobic Process treatment four organic load gives you 100% out put with natural environmental care',
-      'Dramatic change in your Anaerobic process'
-    ],
-    ingredients: ['Anaerobic Bacterial Consortia', 'Enzymes & Co-factors'],
-    precautions: [
-      'Avoid direct naked hand use or inhaling for effectiveness increase dissolve in tap water before 1hr & use',
-      'Non Hazardous and non-flammable, 100% organic and Nontoxic',
-      'Store in cool place, avoid direct sunlight',
-      'Keep in dry airtight container to prevent activation'
-    ],
-    usage: 'Use 30 to 50 gm/KLD in waste water treatments, USBR, Bio Reactor, Septic Tank Treatment, Biogas Treatment, organic waste decomposing solution.'
-  },
+
  
   {
+    // color green
     id: 12,
     name: 'MicroBact शेती संजीवनी',
     category: 'Agriculture',
@@ -372,7 +363,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.9,
     reviews: 120,
-    images: [greenPouch, sheti_sanjivni_sticker],
+    images: [ sheti_sanjivni_sticker],
     benefits: [
       'Its change soil biology with physics',
       'Crop shows immediate impact',
@@ -507,7 +498,6 @@ const ProductCard = ({ product, onLearnMore }) => {
             className="flex-1 bg-white text-gray-800 font-bold py-3 px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2 group"
           >
             <span>Learn More</span>
-            <Sparkles size={18} className="group-hover:rotate-12 transition-transform duration-300" />
           </button>
         </div>
       </div>
@@ -997,31 +987,7 @@ const Services = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-20 text-center">
-          <div className="bg-gradient-to-r from-blue-600 to-green-600 rounded-3xl p-12 shadow-2xl relative overflow-hidden">
-            {/* Pattern Background */}
-            <div className="absolute inset-0 opacity-10">
-              <div
-                className="absolute inset-0"
-                style={{
-                  backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-                  backgroundSize: '40px 40px',
-                }}
-              ></div>
-            </div>
-
-            <div className="relative z-10">
-              <h2 className="text-4xl font-bold text-white mb-4">Need Help Choosing?</h2>
-              <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                Our skincare experts are here to help you find the perfect products for your skin type
-              </p>
-              <button className="bg-white text-blue-600 font-bold px-10 py-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110 inline-flex items-center gap-3 group">
-                <span>Get Expert Advice</span>
-                <Zap size={20} className="group-hover:rotate-12 transition-transform duration-300" />
-              </button>
-            </div>
-          </div>
-        </div>
+       
       </div>
 
       {/* Product Detail Modal */}

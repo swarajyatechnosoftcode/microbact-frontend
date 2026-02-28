@@ -1,10 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight, Sparkles, ArrowRight, Star, Heart } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import blue_pouch from '../../images/products/blue_pouch.png'
-import green_pouch from '../../images/products/green_pouch.png'
-import pink_bottel from '../../images/products/pink_bottel.png'
-import pink_pouch from '../../images/products/pink_pouch.png'
+import biogasBoom from '../../images/products/biogas_boom.png';
+import biologicalSolution from '../../images/products/boiological_solution.png';
+import septicTank from '../../images/products/Septic_tank.png';
+import dwtc from '../../images/products/dwtc.png';
+import easycompost from '../../images/products/easycompost.png';
+import fog_sticker from '../../images/products/fog_sticker.jpg';
+
 
 const ProductCard = ({ name, color, gradient, delay, productUrl, description, rating, reviews, image }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -167,16 +170,15 @@ export default function ProductSection() {
   const scrollRef = useRef(null);
 
   const products = [
-    
     {
       name: 'MicroBact Biogas Boom',
-      color: 'bg-gradient-to-br from-violet-400 via-purple-500 to-indigo-600',
-      gradient: 'bg-gradient-to-br from-violet-400 to-indigo-600',
+      color: 'bg-gradient-to-br from-cyan-400 via-blue-500 to-indigo-600',
+      gradient: 'bg-gradient-to-br from-cyan-400 to-indigo-600',
       productUrl: '/products/microbact-biogas-boom',
       description: 'Biogas enhancer culture for hydrolysis, acidogenesis & acetogenesis',
       rating: 4.8,
       reviews: 120,
-      image: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop'
+      image: biogasBoom
     },
     {
       name: 'MicroBact RE NIT WARANGAL',
@@ -186,27 +188,27 @@ export default function ProductSection() {
       description: 'NIT Warangal tested and approved product for nutrient removal',
       rating: 4.9,
       reviews: 100,
-      image: 'https://images.unsplash.com/photo-1571875257727-256c39da42af?w=400&h=400&fit=crop'
+      image: biologicalSolution
     },
     {
       name: 'MicroBact Septic Tank',
-      color: 'bg-gradient-to-br from-lime-400 via-green-500 to-emerald-600',
-      gradient: 'bg-gradient-to-br from-lime-400 to-emerald-600',
+      color: 'bg-gradient-to-br from-yellow-600 via-yellow-500 to-yellow-400',
+      gradient: 'bg-gradient-to-br from-yellow-600 to-yellow-400',
       productUrl: '/products/microbact-septic-tank',
       description: 'Bio culture for septic tank organic waste degradation',
       rating: 4.7,
       reviews: 150,
-      image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop'
+      image: septicTank
     },
     {
       name: 'MicroBact DWTC',
-      color: 'bg-gradient-to-br from-emerald-500 via-emerald-600 to-teal-600',
-      gradient: 'bg-gradient-to-br from-emerald-400 to-teal-600',
+      color: 'bg-gradient-to-br from-blue-500 via-navy-600 to-teal-600',
+      gradient: 'bg-gradient-to-br from-blue-500 to-teal-600',
       productUrl: '/products/microbact-dwtc',
       description: 'Natural biocatalyst for dissolving fat, oil, and grease',
       rating: 4.9,
       reviews: 180,
-      image: 'https://images.unsplash.com/photo-1571875257727-256c39da42af?w=400&h=400&fit=crop'
+      image: dwtc
     },
     {
       name: 'MicroBact Easy Compost',
@@ -216,17 +218,17 @@ export default function ProductSection() {
       description: 'Powerful bio-culture for composting organic waste',
       rating: 4.8,
       reviews: 140,
-      image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop'
+      image: easycompost
     },
     {
       name: 'MicroBact FOG',
-      color: 'bg-gradient-to-br from-indigo-500 via-purple-600 to-purple-700',
-      gradient: 'bg-gradient-to-br from-indigo-400 to-purple-600',
+      color: 'bg-gradient-to-br from-amber-400 via-orange-500 to-red-500',
+      gradient: 'bg-gradient-to-br from-amber-400 to-red-500',
       productUrl: '/products/microbact-fog',
       description: 'Specialized formula for dissolving fat, oil, and grease',
       rating: 4.6,
       reviews: 160,
-      image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop'
+      image: fog_sticker
     },
   ];
 
