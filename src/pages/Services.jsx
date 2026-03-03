@@ -38,6 +38,7 @@ import sheti_sanjivni_sticker from '../images/products/sheti_sanjivni_sticker.jp
 import stp_culture_sticker from '../images/products/stp_culture_sticker.jpg';
 import AeroBact_sticker from '../images/products/AeroBact_sticker.jpg'
 import anareobact_sticker from '../images/products/anareobact_sticker.jpg'
+import back_side from '../images/products/back_side.png'
 
 // Product Data
 const products = [
@@ -53,7 +54,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.8,
     reviews: 120,
-    images: [biogasBoom , biogass_boom_sticker],
+    images: [biogasBoom , biogass_boom_sticker,back_side],
     benefits: [
       'Instant & Fast Release of Enzymes',
       'Control Odor Fast',
@@ -83,7 +84,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.9,
     reviews: 100,
-    images: [biologicalSolution, bluePouch, greenPouch],
+    images: [biologicalSolution, bluePouch, greenPouch,back_side],
     benefits: [
       '90-95% reduction in nitrogen and phosphate',
       'Fast algae degradation',
@@ -113,7 +114,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.7,
     reviews: 150,
-    images: [septicTank ,septicTankSticker],
+    images: [septicTank ,septicTankSticker ,back_side],
     benefits: [
       'Reduction in sludge production',
       'Brake down solid fats & smooth operation',
@@ -144,7 +145,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.9,
     reviews: 180,
-    images: [dwtc  ,Dwtc_sticker  ],
+    images: [dwtc  ,Dwtc_sticker ,back_side ],
     benefits: [
       'Reduce 100% degrade fat oil grease after application',
       'Reduce sludge production',
@@ -176,7 +177,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.8,
     reviews: 140,
-    images: [easycompost,easy_compost_sticker],
+    images: [easycompost,easy_compost_sticker ,back_side],
     benefits: [
       'MicroBact easy compost is a very effective bio-culture',
       'Control a foul odor, control fly, mosquito',
@@ -205,7 +206,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.6,
     reviews: 160,
-    images: [fog_sticker],
+    images: [fog_sticker ,back_side],
     benefits: [
       'Reduce 100% degrade fat oil grease after application of MicroBact FOG',
       'Reduce sludge production',
@@ -236,7 +237,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.5,
     reviews: 130,
-    images: [odourCulture ,odur_culture_sticker],
+    images: [odourCulture ,odur_culture_sticker ,back_side],
     benefits: [
       'Reduce 100% odor after application',
       'Increase composting speed',
@@ -270,7 +271,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.9,
     reviews: 150,
-    images: [stp_culture_sticker],
+    images: [stp_culture_sticker ,back_side],
     benefits: [
       'Reduce COD. BOD',
       'Reduce suspended solids',
@@ -302,7 +303,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.7,
     reviews: 140,
-    images: [anareobact_sticker],
+    images: [anareobact_sticker ,back_side],
     benefits: [
       'Control foul smell in anaerobic systems',
       'Enhance anaerobic process treatment for organic load',
@@ -331,7 +332,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.8,
     reviews: 160,
-    images: [areobact ,AeroBact_sticker],
+    images: [areobact ,AeroBact_sticker ,back_side],
     benefits: [
       'Immediately active bacteria start working after addition of AeroBact',
       'Treat organic load easily & hassle free',
@@ -363,7 +364,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.9,
     reviews: 120,
-    images: [ sheti_sanjivni_sticker],
+    images: [ sheti_sanjivni_sticker ,back_side],
     benefits: [
       'Its change soil biology with physics',
       'Crop shows immediate impact',

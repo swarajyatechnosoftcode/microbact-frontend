@@ -7,6 +7,7 @@ import septicTank from '../../images/products/Septic_tank.png';
 import dwtc from '../../images/products/dwtc.png';
 import easycompost from '../../images/products/easycompost.png';
 import fog_sticker from '../../images/products/fog_sticker.jpg';
+import back_side from '../../images/products/back_side.png';
 
 
 const ProductCard = ({ name, color, gradient, delay, productUrl, description, rating, reviews, image }) => {
