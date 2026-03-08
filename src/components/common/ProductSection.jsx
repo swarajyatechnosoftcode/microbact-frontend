@@ -41,7 +41,7 @@ const ProductCard = ({ name, color, gradient, delay, productUrl, description, ra
     >
       <div className={`${color} rounded-3xl p-6 shadow-xl transition-all duration-500 transform ${
         isHovered ? 'sm:-translate-y-4 shadow-2xl sm:scale-105' : ''
-      } cursor-pointer group relative overflow-hidden`}>
+      } cursor-pointer group relative overflow-hidden h-[550px] flex flex-col`}>
 
 
         {/* Product Image Container */}
@@ -71,15 +71,15 @@ const ProductCard = ({ name, color, gradient, delay, productUrl, description, ra
         </div>
 
         {/* Product Info */}
-        <div className="relative z-10 space-y-3">
+        <div className="relative z-10 space-y-3 flex-1 flex flex-col">
           {/* Product Name */}
           <div className="text-center">
-            <h3 className={`text-2xl font-bold text-white drop-shadow-lg transition-all duration-300 mb-2 ${
+            <h3 className={`text-2xl font-bold text-white drop-shadow-lg transition-all duration-300 mb-2 min-h-[64px] flex items-center justify-center ${
               isHovered ? 'sm:scale-110' : ''
             }`}>{name}</h3>
             
             {/* Product Description */}
-            <p className="text-white/90 text-sm leading-relaxed px-2">
+            <p className="text-white/90 text-sm leading-relaxed px-2 min-h-[60px]">
               {description}
             </p>
           </div>
@@ -104,7 +104,7 @@ const ProductCard = ({ name, color, gradient, delay, productUrl, description, ra
           </div>
 
           {/* Learn More Button */}
-          <div>
+          <div className="mt-auto">
             <button
               onClick={handleLearnMore}
               className="w-full bg-white text-gray-800 font-semibold py-2.5 px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-blue-500 hover:to-emerald-500 hover:text-white flex items-center justify-center gap-2 group/btn text-sm"
