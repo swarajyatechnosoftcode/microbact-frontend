@@ -167,21 +167,21 @@ export default function CertificateSection() {
   ];
 
   return (
-    <div className="min-h-screen py-16 px-4 overflow-hidden">
+    <div className="py-12 px-4 overflow-hidden bg-white">
       {/* Animated background elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-300/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-green-300/20 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-emerald-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-teal-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-green-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center justify-center p-4 bg-gradient-to-r from-blue-500 via-emerald-500 to-teal-500 rounded-full mb-6 shadow-xl animate-bounce-slow">
+          <div className="inline-flex items-center justify-center p-4 bg-gradient-to-r from-green-500 via-emerald-500 to-green-500 rounded-full mb-6 shadow-xl animate-bounce-slow">
             <Award className="text-white" size={40} />
           </div>
-          <h1 className="text-6xl font-bold bg-gradient-to-r from-blue-600 via-emerald-600 to-teal-600 bg-clip-text text-transparent mb-4 animate-gradient">
+          <h1 className="text-6xl font-bold bg-gradient-to-r from-green-600 via-emerald-600 to-green-600 bg-clip-text text-transparent mb-4 animate-gradient">
             Rewards & Recognition
           </h1>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
@@ -202,15 +202,6 @@ export default function CertificateSection() {
               <CertificateCard {...cert} index={index} />
             </div>
           ))}
-        </div>
-
-        {/* Footer Note */}
-        <div className="mt-16 text-center">
-          <p className="text-gray-500 text-sm flex items-center justify-center gap-2">
-            <Sparkles size={16} className="text-emerald-500 animate-pulse" />
-            Hover over certificates to flip and view detailed information
-            <Sparkles size={16} className="text-blue-500 animate-pulse" />
-          </p>
         </div>
       </div>
 

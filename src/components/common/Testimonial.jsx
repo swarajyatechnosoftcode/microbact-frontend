@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Star, Quote } from "lucide-react";
+import "./Testimonial.css";
 
 const testimonials = [
   {
@@ -54,15 +55,8 @@ const Testimonial = () => {
     (center + offset + testimonials.length) % testimonials.length;
 
   return (
-    <section className="min-h-screen py-16 px-4 overflow-hidden relative bg-gradient-to-br from-green-50 via-blue-50 to-emerald-50">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-10 left-10 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl animate-blob"></div>
-        <div className="absolute bottom-10 right-10 w-80 h-80 bg-emerald-300/20 rounded-full blur-3xl animate-blob animation-delay-2000"></div>
-        <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-pink-300/20 rounded-full blur-3xl animate-blob animation-delay-4000"></div>
-      </div>
-
-      <div className="max-w-7xl mx-auto relative z-10">
+    <section className="py-12 px-4 bg-white">
+      <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-14">
           <h2 className="text-5xl md:text-6xl font-bold text-green-700 mb-3">
@@ -72,7 +66,7 @@ const Testimonial = () => {
         </div>
 
         {/* Carousel */}
-        <div className="relative flex justify-center items-center gap-6 min-h-[420px] flex-col md:flex-row">
+        <div className="relative flex justify-center items-center gap-6 min-h-[420px] flex-row overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none hide-scrollbar">
           {[-1, 0, 1].map((pos) => {
             const item = testimonials[getIndex(pos)];
             const isCenter = pos === 0;
@@ -80,13 +74,13 @@ const Testimonial = () => {
             return (
               <div
                 key={pos}
-                className={`transition-all duration-700 ease-in-out ${
+                className={`flex-shrink-0 snap-center transition-all duration-700 ease-in-out ${
                   isCenter
                     ? "scale-105 opacity-100 z-10"
                     : "scale-90 opacity-50"
                 }`}
               >
-                <div className="relative bg-gradient-to-br from-blue-500 to-emerald-500 rounded-2xl shadow-2xl p-8 w-[90%] md:w-[320px] text-center">
+                <div className="relative bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl shadow-2xl p-8 w-[85vw] md:w-[320px] text-center">
                   <Quote
                     size={50}
                     className="absolute top-4 right-4 text-white/30"
@@ -145,17 +139,6 @@ const Testimonial = () => {
         </div>
       </div>
 
-      <style jsx>{`
-        @keyframes blob {
-          0%, 100% { transform: translate(0, 0) scale(1); }
-          25% { transform: translate(20px, -20px) scale(1.1); }
-          50% { transform: translate(-20px, 20px) scale(0.9); }
-          75% { transform: translate(20px, 20px) scale(1.05); }
-        }
-        .animate-blob { animation: blob 7s ease-in-out infinite; }
-        .animation-delay-2000 { animation-delay: 2s; }
-        .animation-delay-4000 { animation-delay: 4s; }
-      `}</style>
     </section>
   );
 };

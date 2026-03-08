@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { 
   X, 
   ChevronLeft, 
@@ -890,9 +891,30 @@ const ProductDetailModal = ({ product, isOpen, onClose }) => {
 
 // Main Product Component
 const Services = () => {
+  const location = useLocation();
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
+  const [activeFilter, setActiveFilter] = useState('All');
+
+  // Get unique categories
+  const categories = ['All', ...new Set(products.map(p => p.category))];
+
+  // Filter products based on active filter
+  const filteredProducts = activeFilter === 'All' 
+    ? products 
+    : products.filter(p => p.category === activeFilter);
+
+  // Check if navigated from home page with product name
+  useEffect(() => {
+    if (location.state?.productName) {
+      const product = products.find(p => p.name === location.state.productName);
+      if (product) {
+        setSelectedProduct(product);
+        setIsModalOpen(true);
+      }
+    }
+  }, [location.state]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -913,40 +935,16 @@ const Services = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-emerald-50 relative overflow-hidden">
-      {/* Animated Background Orbs */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div
-          className="absolute top-20 left-10 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl animate-blob"
-          style={{ transform: `translateY(${scrollY * 0.1}px)` }}
-        ></div>
-        <div
-          className="absolute bottom-20 right-10 w-96 h-96 bg-emerald-300/20 rounded-full blur-3xl animate-blob animation-delay-2000"
-          style={{ transform: `translateY(${scrollY * 0.15}px)` }}
-        ></div>
-        <div
-          className="absolute top-1/2 left-1/3 w-96 h-96 bg-pink-300/20 rounded-full blur-3xl animate-blob animation-delay-4000"
-          style={{ transform: `translateY(${scrollY * 0.2}px)` }}
-        ></div>
-      </div>
-
+    <div className="min-h-screen bg-white relative">
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-20">
+      <div className="container mx-auto px-4 py-20">
         {/* Header */}
         <div className="text-center mb-16 space-y-6">
-          <div className="inline-flex items-center gap-3 bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
-            <Sparkles className="text-blue-600 animate-spin-slow" size={24} />
-            <span className="text-sm font-bold text-gray-700 uppercase tracking-wider">Premium Products</span>
-            <Sparkles className="text-green-600 animate-spin-slow animation-delay-500" size={24} />
-          </div>
+     
 
-          <h1 className="text-6xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-green-500 to-blue-600 animate-gradient bg-300%">
+          <h1 className="text-6xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 via-emerald-500 to-green-600 animate-gradient bg-300%">
             Our Product
           </h1>
-
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Discover our complete range of premium skincare products designed to bring out your natural beauty
-          </p>
 
           {/* Stats */}
           <div className="flex flex-wrap justify-center gap-8 mt-10">
@@ -974,9 +972,26 @@ const Services = () => {
           </div>
         </div>
 
+        {/* Filter Buttons */}
+        <div className="flex flex-wrap justify-center gap-3 mb-12">
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setActiveFilter(category)}
+              className={`px-6 py-3 rounded-full font-bold transition-all duration-300 border-2 ${
+                activeFilter === category
+                  ? 'bg-gradient-to-r from-green-600 to-emerald-600 text-white shadow-xl border-green-600 scale-105'
+                  : 'bg-white text-gray-700 shadow-lg border-gray-200 hover:border-green-500 hover:shadow-xl hover:scale-105'
+              }`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product, index) => (
+          {filteredProducts.map((product, index) => (
             <div
               key={product.id}
               className="animate-fadeInUp"

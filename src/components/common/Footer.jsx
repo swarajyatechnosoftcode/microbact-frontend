@@ -4,7 +4,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-gradient-to-br from-sky-500 via-blue-600 to-emerald-600 text-white">
+    <footer className="relative bg-gradient-to-br from-green-500 via-emerald-600 to-green-600 text-white">
 
       {/* Soft Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.2),transparent_70%)] pointer-events-none" />
@@ -35,13 +35,18 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-3">
-              {["Home", "About", "Services", "Portfolio", "Contact"].map((link) => (
-                <li key={link}>
+              {[
+                { name: "Home", href: "/" },
+                { name: "About", href: "/about" },
+                { name: "Products", href: "/services" },
+                { name: "Contact", href: "/contact" },
+              ].map((link) => (
+                <li key={link.name}>
                   <a
-                    href="#"
+                    href={link.href}
                     className="text-white/80 hover:text-white transition hover:translate-x-1 inline-block"
                   >
-                    {link}
+                    {link.name}
                   </a>
                 </li>
               ))}

@@ -606,20 +606,9 @@ const Product = () => {
       <div className="relative z-10 container mx-auto px-4 py-20">
         {/* Header */}
         <div className="text-center mb-16 space-y-6">
-          <div className="inline-flex items-center gap-3 bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
-            <Sparkles className="text-blue-600 animate-spin-slow" size={24} />
-            <span className="text-sm font-bold text-gray-700 uppercase tracking-wider">Premium Products</span>
-            <Sparkles className="text-green-600 animate-spin-slow animation-delay-500" size={24} />
-          </div>
-
           <h1 className="text-6xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-green-500 to-blue-600 animate-gradient bg-300%">
             Our Product
           </h1>
-
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Discover our complete range of premium skincare products designed to bring out your natural beauty
-          </p>
-
           {/* Stats */}
           <div className="flex flex-wrap justify-center gap-8 mt-10">
             <div className="flex items-center gap-3 bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">

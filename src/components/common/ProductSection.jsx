@@ -11,6 +11,7 @@ import back_side from '../../images/products/back_side.png';
 
 
 const ProductCard = ({ name, color, gradient, delay, productUrl, description, rating, reviews, image }) => {
+  const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [isFavorite, setIsFavorite] = useState(false);
@@ -21,7 +22,8 @@ const ProductCard = ({ name, color, gradient, delay, productUrl, description, ra
 
   const handleLearnMore = (e) => {
     e.stopPropagation();
-    window.location.href = productUrl;
+    // Navigate to services page with product name as state
+    navigate('/services', { state: { productName: name } });
   };
 
   const toggleFavorite = (e) => {
@@ -31,56 +33,24 @@ const ProductCard = ({ name, color, gradient, delay, productUrl, description, ra
 
   return (
     <div 
-      className={`flex-shrink-0 w-80 mx-4 transition-all duration-700 transform ${
+      className={`flex-shrink-0 w-[90vw] sm:w-80 transition-all duration-700 transform ${
         isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
       }`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className={`${color} rounded-3xl p-6 shadow-xl transition-all duration-500 transform ${
-        isHovered ? '-translate-y-4 shadow-2xl scale-105' : ''
-      } cursor-pointer group relative overflow-hidden h-[32rem]`}>
-        {/* Animated background particles */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className={`absolute top-4 right-4 w-20 h-20 bg-white/10 rounded-full blur-xl transition-all duration-700 ${
-            isHovered ? 'scale-150 animate-pulse' : 'animate-pulse'
-          }`}></div>
-          <div className={`absolute bottom-4 left-4 w-24 h-24 bg-white/10 rounded-full blur-xl transition-all duration-700 ${
-            isHovered ? 'scale-150 animate-pulse' : 'animate-pulse'
-          }`} style={{ animationDelay: '1s' }}></div>
-          <div className={`absolute top-1/2 left-1/2 w-16 h-16 bg-white/10 rounded-full blur-xl transition-all duration-700 ${
-            isHovered ? 'scale-150 animate-pulse' : 'animate-pulse'
-          }`} style={{ animationDelay: '0.5s' }}></div>
-        </div>
+        isHovered ? 'sm:-translate-y-4 shadow-2xl sm:scale-105' : ''
+      } cursor-pointer group relative overflow-hidden`}>
 
-        {/* Animated gradient ring on hover */}
-        <div className={`absolute inset-0 transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
-          <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-transparent to-white/20 animate-rotate-gradient"></div>
-        </div>
-
-        {/* Shine effect */}
-        <div className={`absolute inset-0 bg-gradient-to-br from-white/0 via-white/40 to-white/0 transform transition-transform duration-1000 ${
-          isHovered ? 'translate-x-full' : '-translate-x-full'
-        }`}></div>
-
-        {/* Floating sparkles on hover */}
-        <div className={`absolute inset-0 pointer-events-none transition-opacity duration-500 ${
-          isHovered ? 'opacity-100' : 'opacity-0'
-        }`}>
-          <Sparkles className="absolute top-6 right-6 text-white/50 animate-float" size={18} />
-          <Sparkles className="absolute bottom-12 left-8 text-white/50 animate-float" size={16} style={{ animationDelay: '0.3s' }} />
-          <Sparkles className="absolute top-1/3 right-12 text-white/50 animate-float" size={14} style={{ animationDelay: '0.6s' }} />
-          <Star className="absolute top-12 left-12 text-yellow-300/60 animate-float" size={16} style={{ animationDelay: '0.2s' }} />
-          <Star className="absolute bottom-1/3 right-8 text-yellow-300/60 animate-float" size={14} style={{ animationDelay: '0.8s' }} />
-        </div>
 
         {/* Product Image Container */}
         <div className={`relative mb-4 transition-all duration-700 ${
-          isHovered ? 'scale-110 -rotate-3' : ''
+          isHovered ? 'sm:scale-110 sm:-rotate-3' : ''
         }`}>
           {/* Background glow */}
           <div className={`absolute inset-0 ${gradient} rounded-2xl blur-2xl transition-all duration-500 ${
-            isHovered ? 'opacity-80 scale-110' : 'opacity-50'
+            isHovered ? 'opacity-80 sm:scale-110' : 'opacity-50'
           }`}></div>
           
           {/* Product Image */}
@@ -93,7 +63,7 @@ const ProductCard = ({ name, color, gradient, delay, productUrl, description, ra
                 src={image} 
                 alt={name}
                 className={`max-w-full max-h-full object-contain transition-all duration-500 ${
-                  isHovered ? 'scale-110' : 'scale-100'
+                  isHovered ? 'sm:scale-110' : 'scale-100'
                 }`}
               />
             </div>
@@ -104,8 +74,8 @@ const ProductCard = ({ name, color, gradient, delay, productUrl, description, ra
         <div className="relative z-10 space-y-3">
           {/* Product Name */}
           <div className="text-center">
-            <h3 className={`text-3xl font-bold text-white drop-shadow-lg transition-all duration-300 mb-2 ${
-              isHovered ? 'scale-110' : ''
+            <h3 className={`text-2xl font-bold text-white drop-shadow-lg transition-all duration-300 mb-2 ${
+              isHovered ? 'sm:scale-110' : ''
             }`}>{name}</h3>
             
             {/* Product Description */}
@@ -125,7 +95,7 @@ const ProductCard = ({ name, color, gradient, delay, productUrl, description, ra
                     i < Math.floor(rating)
                       ? 'fill-yellow-300 text-yellow-300'
                       : 'fill-white/30 text-white/30'
-                  } ${isHovered ? 'scale-110' : ''}`}
+                  } ${isHovered ? 'sm:scale-110' : ''}`}
                   style={{ transitionDelay: `${i * 50}ms` }}
                 />
               ))}
@@ -133,16 +103,14 @@ const ProductCard = ({ name, color, gradient, delay, productUrl, description, ra
             <span className="text-white/90 text-sm font-medium">({reviews})</span>
           </div>
 
-          {/* Learn More Button - Show on Hover */}
-          <div className={`transition-all duration-500 transform ${
-            isHovered ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6 pointer-events-none'
-          }`}>
+          {/* Learn More Button */}
+          <div>
             <button
-              onClick={() => window.location.href = productUrl}
-              className="w-full bg-white text-gray-800 font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:bg-gradient-to-r hover:from-blue-500 hover:to-emerald-500 hover:text-white flex items-center justify-center gap-2 group/btn"
+              onClick={handleLearnMore}
+              className="w-full bg-white text-gray-800 font-semibold py-2.5 px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-blue-500 hover:to-emerald-500 hover:text-white flex items-center justify-center gap-2 group/btn text-sm"
             >
-              <span className="transition-all duration-300">Learn More</span>
-              <ArrowRight size={20} className="transition-all duration-300 group-hover/btn:translate-x-2 group-hover/btn:scale-110" />
+              <span>Learn More</span>
+              <ArrowRight size={16} className="transition-all duration-300 group-hover/btn:translate-x-1" />
             </button>
           </div>
         </div>
@@ -246,7 +214,8 @@ export default function ProductSection() {
   useEffect(() => {
     if (scrollRef.current) {
       setIsTransitioning(true);
-      const cardWidth = 336;
+      const isMobile = window.innerWidth < 640;
+      const cardWidth = isMobile ? window.innerWidth * 0.9 : 336;
       const scrollLeft = currentIndex * cardWidth;
       
       scrollRef.current.scrollTo({
@@ -282,59 +251,50 @@ export default function ProductSection() {
   };
 
   return (
-    <div className="min-h-screen  py-16 px-4 overflow-hidden relative">
-      {/* Animated background elements */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-10 left-10 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl animate-blob"></div>
-        <div className="absolute bottom-10 right-10 w-80 h-80 bg-emerald-300/20 rounded-full blur-3xl animate-blob animation-delay-2000"></div>
-        <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-pink-300/20 rounded-full blur-3xl animate-blob animation-delay-4000"></div>
-        <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-teal-300/20 rounded-full blur-3xl animate-blob animation-delay-3000"></div>
-      </div>
+    <div className="min-h-screen bg-white py-4 overflow-hidden relative">
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
           <div className="inline-block mb-4">
-            <div className="flex items-center gap-3">
-              <Sparkles className="text-green-600 animate-bounce-slow" size={36} />
-              <h1 className="text-6xl font-bold text-green-700">
+            <div className="flex flex-col sm:flex-row items-center gap-3">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-green-700">
                 Our popular products
               </h1>
-              <Sparkles className="text-green-600 animate-bounce-slow animation-delay-500" size={36} />
             </div>
           </div>
-          <p className="text-gray-600 text-lg animate-fade-in animation-delay-300 max-w-4xl mx-auto">
-            MicroBact offers a wide range of high-quality bio-culture products designed to enhance waste management and environmental sustainability. Our balanced biological formulas include specialized cultures for biogas enhancement, septic tank treatment, and composting solutions.
-          </p>
         </div>
 
         {/* Carousel Container */}
-        <div className="relative mb-12">
+        <div className="relative mb-8 sm:mb-12">
           <div
             ref={scrollRef}
-            className="overflow-hidden px-4 scroll-smooth"
+            className="overflow-x-auto overflow-y-hidden scroll-smooth hide-scrollbar snap-x snap-mandatory"
             onMouseEnter={() => setIsAutoPlaying(false)}
             onMouseLeave={() => setIsAutoPlaying(true)}
+            onTouchStart={() => setIsAutoPlaying(false)}
           >
-            <div className="flex py-8">
+            <div className="flex gap-4 py-8 px-4">
               {products.map((product, index) => (
-                <ProductCard key={index} {...product} delay={index * 100} />
+                <div key={index} className="snap-center">
+                  <ProductCard {...product} delay={index * 100} />
+                </div>
               ))}
             </div>
           </div>
         </div>
 
         {/* Controls Container */}
-        <div className="flex items-center justify-center gap-6 animate-fade-in animation-delay-600">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 animate-fade-in animation-delay-600">
           <button
             onClick={handlePrevious}
             disabled={isTransitioning}
-            className="bg-white hover:bg-gradient-to-r hover:from-blue-500 hover:to-emerald-500 text-gray-700 hover:text-white p-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110 hover:rotate-3 group disabled:opacity-50 disabled:cursor-not-allowed"
+            className="bg-white hover:bg-gradient-to-r hover:from-green-500 hover:to-emerald-500 text-gray-700 hover:text-white p-3 sm:p-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110 hover:rotate-3 group disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            <ChevronLeft size={28} className="transition-transform duration-300 group-hover:-translate-x-1 group-hover:scale-110" />
+            <ChevronLeft size={24} className="sm:w-7 sm:h-7 transition-transform duration-300 group-hover:-translate-x-1 group-hover:scale-110" />
           </button>
 
-          <div className="flex gap-3">
+          <div className="flex gap-2 sm:gap-3 flex-wrap justify-center">
             {products.map((_, index) => (
               <button
                 key={index}
@@ -342,8 +302,8 @@ export default function ProductSection() {
                 disabled={isTransitioning}
                 className={`transition-all duration-500 rounded-full disabled:cursor-not-allowed ${
                   index === currentIndex
-                    ? 'bg-gradient-to-r from-blue-500 to-emerald-500 w-12 h-4 shadow-lg animate-pulse-slow'
-                    : 'bg-gray-300 hover:bg-gradient-to-r hover:from-blue-400 hover:to-emerald-400 w-4 h-4 hover:w-8 hover:scale-110'
+                    ? 'bg-gradient-to-r from-green-500 to-emerald-500 w-12 h-4 shadow-lg animate-pulse-slow'
+                    : 'bg-gray-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-emerald-400 w-4 h-4 hover:w-8 hover:scale-110'
                 }`}
               />
             ))}
@@ -352,9 +312,9 @@ export default function ProductSection() {
           <button
             onClick={handleNext}
             disabled={isTransitioning}
-            className="bg-white hover:bg-gradient-to-r hover:from-blue-500 hover:to-emerald-500 text-gray-700 hover:text-white p-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110 hover:-rotate-3 group disabled:opacity-50 disabled:cursor-not-allowed"
+            className="bg-white hover:bg-gradient-to-r hover:from-green-500 hover:to-emerald-500 text-gray-700 hover:text-white p-3 sm:p-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110 hover:-rotate-3 group disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            <ChevronRight size={28} className="transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-110" />
+            <ChevronRight size={24} className="sm:w-7 sm:h-7 transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-110" />
           </button>
         </div>
 
@@ -410,6 +370,9 @@ export default function ProductSection() {
         .animate-bounce-slow { animation: bounce-slow 2s ease-in-out infinite; }
         .animate-rotate-gradient { animation: rotate-gradient 3s linear infinite; }
         .animate-pulse-slow { animation: pulse-slow 2s ease-in-out infinite; }
+        
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         
         .animation-delay-300 { animation-delay: 300ms; }
         .animation-delay-500 { animation-delay: 500ms; }
