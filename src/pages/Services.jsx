@@ -15,7 +15,8 @@ import {
   Package,
   TrendingUp,
   Award,
-  Zap
+  Zap,
+  FileText
 } from 'lucide-react';
 import allP from '../images/products/all_p.png';
 import areobact from '../images/products/areobact.png';
@@ -40,6 +41,14 @@ import stp_culture_sticker from '../images/products/stp_culture_sticker.jpg';
 import AeroBact_sticker from '../images/products/AeroBact_sticker.jpg'
 import anareobact_sticker from '../images/products/anareobact_sticker.jpg'
 import back_side from '../images/products/back_side.png'
+import aerobactPdf from '../assets/pdfs/Aerobact MSDS.pdf';
+import anaerobactPdf from '../assets/pdfs/Anaerobact MSDS.pdf';
+import biogasBoomPdf from '../assets/pdfs/Biogas boom MSDS .pdf';
+import dwtcPdf from '../assets/pdfs/DWTC MSDS.pdf';
+import fogPdf from '../assets/pdfs/FOG MSDS.pdf';
+import rePdf from '../assets/pdfs/RE MSDS.pdf';
+import stpPdf from '../assets/pdfs/msds of stp culture.pdf';
+import septicTankPdf from '../assets/pdfs/septic tank MSDS.pdf';
 
 // Product Data
 const products = [
@@ -71,7 +80,8 @@ const products = [
       'Store in cool place, avoid direct sunlight',
       'Keep in dry airtight container to prevent activation'
     ],
-    usage: 'Add to biogas digesters and reactors. Follow specific dosage guidelines for optimal biogas production.'
+    usage: 'Add to biogas digesters and reactors. Follow specific dosage guidelines for optimal biogas production.',
+    brochure: biogasBoomPdf
   },
   {
     // color light green and blue 
@@ -101,7 +111,8 @@ const products = [
       'Avoid direct sunlight',
       'Keep in airtight container'
     ],
-    usage: 'Apply in wastewater treatment systems for nutrient removal. Dosage based on system requirements and testing.'
+    usage: 'Apply in wastewater treatment systems for nutrient removal. Dosage based on system requirements and testing.',
+    brochure: rePdf
   },
   {
     //  color yellow
@@ -132,7 +143,8 @@ const products = [
       'Store in cool place, avoid direct sunlight',
       'Keep in dry airtight container to prevent activation'
     ],
-    usage: 'Apply in septic tanks, toilets, drainage systems, and bio toilets. Dosage varies by application and system size.'
+    usage: 'Apply in septic tanks, toilets, drainage systems, and bio toilets. Dosage varies by application and system size.',
+    brochure: septicTankPdf
   },
   {
     // color light blue
@@ -164,7 +176,8 @@ const products = [
       'Store in cool place, avoid direct sunlight',
       'Keep in dry airtight container to prevent activation'
     ],
-    usage: 'Apply in wastewater treatment systems prone to fat, oil, and grease accumulation. Dosage based on system requirements.'
+    usage: 'Apply in wastewater treatment systems prone to fat, oil, and grease accumulation. Dosage based on system requirements.',
+    brochure: dwtcPdf
   },
   {
     // color orange and red 
@@ -193,7 +206,8 @@ const products = [
       'Store in cool place, avoid direct sunlight',
       'Keep in dry airtight container to prevent activation'
     ],
-    usage: 'Use 1 gm culture for 1kg food waste, mix properly, add water if needed, turn weekly for aeration. Good compost in 4-6 weeks.'
+    usage: 'Use 1 gm culture for 1kg food waste, mix properly, add water if needed, turn weekly for aeration. Good compost in 4-6 weeks.',
+    brochure: null
   },
   {
     // color orange 
@@ -224,7 +238,8 @@ const products = [
       'Store in cool place, avoid direct sunlight',
       'Keep in dry airtight container to prevent activation'
     ],
-    usage: 'Apply in wastewater systems to dissolve FOG. Dosage based on system requirements.'
+    usage: 'Apply in wastewater systems to dissolve FOG. Dosage based on system requirements.',
+    brochure: fogPdf
   },
   {
     // color light green 
@@ -257,7 +272,8 @@ const products = [
       'Store in cool place, avoid direct sunlight',
       'Keep in dry airtight container to prevent activation'
     ],
-    usage: 'Apply in wastewater treatment systems, composting systems, landfills, and anaerobic digesters to reduce odor.'
+    usage: 'Apply in wastewater treatment systems, composting systems, landfills, and anaerobic digesters to reduce odor.',
+    brochure: null
   },
 
   {
@@ -290,7 +306,8 @@ const products = [
       'Store in cool place, avoid direct sunlight',
       'Keep in dry airtight container to prevent activation'
     ],
-    usage: 'Apply in aerobic & facultative anaerobic systems like MMBR, SBR, ASP, ETP, WWTP for wastewater treatment.'
+    usage: 'Apply in aerobic & facultative anaerobic systems like MMBR, SBR, ASP, ETP, WWTP for wastewater treatment.',
+    brochure: stpPdf
   },
   { 
     // color gren yellow
@@ -319,7 +336,8 @@ const products = [
       'Store in cool place, avoid direct sunlight',
       'Keep in dry airtight container to prevent activation'
     ],
-    usage: 'Use 30 to 50 gm/KLD in wastewater treatments, USBR, Bio Reactor, Septic Tank Treatment, Biogas Treatment, organic waste decomposing.'
+    usage: 'Use 30 to 50 gm/KLD in wastewater treatments, USBR, Bio Reactor, Septic Tank Treatment, Biogas Treatment, organic waste decomposing.',
+    brochure: anaerobactPdf
   },
   {
     // color purple
@@ -349,7 +367,8 @@ const products = [
       'Store in cool place, avoid direct sunlight',
       'Keep in dry airtight container to prevent activation'
     ],
-    usage: 'Use in STP processes like MBR, MBBR, SBR, ASP, ETP. Treats 30 to 50 gm/KLD water in dairy, pharma, agriculture, municipal CETPs.'
+    usage: 'Use in STP processes like MBR, MBBR, SBR, ASP, ETP. Treats 30 to 50 gm/KLD water in dairy, pharma, agriculture, municipal CETPs.',
+    brochure: aerobactPdf
   },
 
  
@@ -381,7 +400,8 @@ const products = [
       'Store in cool place, avoid direct sunlight',
       'Keep in dry airtight container to prevent activation'
     ],
-    usage: 'Drenching of plant in 15 days once or inline drip or flood water irrigation or foliar spray.'
+    usage: 'Drenching of plant in 15 days once or inline drip or flood water irrigation or foliar spray.',
+    brochure: null
   },
 
 ];
@@ -494,13 +514,24 @@ const ProductCard = ({ product, onLearnMore }) => {
         </div>
 
         {/* Action Buttons */}
-        <div className="flex gap-3 pt-2">
+        <div className="flex flex-col gap-2 pt-2">
           <button
             onClick={() => onLearnMore(product)}
-            className="flex-1 bg-white text-gray-800 font-bold py-3 px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2 group"
+            className="w-full bg-white text-gray-800 font-bold py-3 px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2"
           >
             <span>Learn More</span>
           </button>
+          {product.brochure && (
+            <a
+              href={product.brochure}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full bg-white/20 border-2 border-white text-white font-bold py-3 px-4 rounded-full transition-all duration-300 hover:bg-white hover:text-gray-800 flex items-center justify-center gap-2"
+            >
+              <FileText size={18} />
+              <span>View Brochure</span>
+            </a>
+          )}
         </div>
       </div>
     </div>
@@ -531,7 +562,7 @@ const ProductDetailModal = ({ product, isOpen, onClose }) => {
       ></div>
 
       {/* Modal Content */}
-      <div className="relative bg-white rounded-3xl max-w-5xl w-full max-h-[90vh] overflow-hidden shadow-2xl animate-scaleIn">
+      <div className="relative bg-white rounded-3xl max-w-5xl w-full max-h-[95vh] overflow-hidden shadow-2xl animate-scaleIn">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -540,9 +571,9 @@ const ProductDetailModal = ({ product, isOpen, onClose }) => {
           <X size={24} className="text-gray-700" />
         </button>
 
-        <div className="grid md:grid-cols-2 gap-0 h-full">
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-0 h-full overflow-y-auto md:overflow-hidden max-h-[95vh]">
           {/* Left Side - Image Carousel */}
-          <div className={`relative ${product.color} p-8 flex items-center justify-center overflow-hidden`}>
+          <div className={`relative ${product.color} p-6 md:p-8 flex items-center justify-center overflow-hidden min-h-[280px] md:min-h-0`}>
             {/* Background Effects */}
             <div className="absolute inset-0">
               <div className="absolute top-10 left-10 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
@@ -593,7 +624,7 @@ const ProductDetailModal = ({ product, isOpen, onClose }) => {
           </div>
 
           {/* Right Side - Product Details */}
-          <div className="bg-white overflow-y-auto p-8 max-h-[90vh]">
+          <div className="bg-white overflow-y-auto p-6 md:p-8 max-h-[60vh] md:max-h-[95vh]">
             {/* Product Header */}
             <div className="mb-6">
               <h2 className="text-4xl font-bold text-gray-800 mb-2">{product.name}</h2>
