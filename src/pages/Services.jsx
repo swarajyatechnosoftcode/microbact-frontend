@@ -95,7 +95,7 @@ const products = [
     price: 'Contact for pricing',
     rating: 4.9,
     reviews: 100,
-    images: [biologicalSolution, bluePouch, greenPouch,back_side],
+    images: [biologicalSolution, back_side],
     benefits: [
       '90-95% reduction in nitrogen and phosphate',
       'Fast algae degradation',
