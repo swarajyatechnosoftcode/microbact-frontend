@@ -64,8 +64,8 @@ const About = () => {
 
   const team = [
     { id: 1, name: 'Bharat Chavan', designation: 'CEO & Founder', linkedin: '#', twitter: '#', email: 'bharat@microbact.com' },
-    { id: 2, name: 'Priya Sharma', designation: 'Head of Research', linkedin: '#', twitter: '#', email: 'priya@microbact.com' },
-    { id: 3, name: 'Rajesh Kumar', designation: 'Operations Manager', linkedin: '#', twitter: '#', email: 'rajesh@microbact.com' },
+    { id: 2, name: 'Girish Kulkarni', designation: 'Senior Scienitst', linkedin: '#', twitter: '#', email: 'girish@microbact.com' },
+    { id: 3, name: 'Shreyash Chavan', designation: 'Markeing Director', linkedin: '#', twitter: '#', email: 'rajesh@microbact.com' },
     { id: 4, name: 'Anita Desai', designation: 'Quality Control Lead', linkedin: '#', twitter: '#', email: 'anita@microbact.com' }
   ];
 
