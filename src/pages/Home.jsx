@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import all_p from "../images/products/all_p.png";
+import all_p from "../assets/images/allproduct.png";
 import leftImg from "../assets/logos/microbactlogo.jpg";
 import rightImg from "../assets/logos/drdologo.png";
 import CertificateSection from "../components/common/CertificateSection";
