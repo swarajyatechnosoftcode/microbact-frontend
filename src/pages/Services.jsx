@@ -369,40 +369,7 @@ const products = [
     ],
     usage: 'Use in STP processes like MBR, MBBR, SBR, ASP, ETP. Treats 30 to 50 gm/KLD water in dairy, pharma, agriculture, municipal CETPs.',
     brochure: aerobactPdf
-  },
-
- 
-  {
-    // color green
-    id: 12,
-    name: 'MicroBact शेती संजीवनी',
-    category: 'Agriculture',
-    color: 'bg-gradient-to-br from-lime-400 via-green-500 to-emerald-600',
-    gradient: 'from-lime-400 to-emerald-600',
-    shortDescription: 'Bio-culture for crop growth and soil health',
-    fullDescription: 'MicroBact We are happy to introduce our new product शेती संजीवनी is a combination of Bacteria + Fungi + NPK + Nutrient for any crop who does not having growth, health, flowering, root development, soil condition development remove pathogenic content from soil & availability nutrient for crop with the help of Bacteria Fungi crop showing results within 36 to 48 hrs. Drenching of plant in 15 days once or inline drip or flood water irrigation or foliar spray.',
-    price: 'Contact for pricing',
-    rating: 4.9,
-    reviews: 120,
-    images: [ sheti_sanjivni_sticker ,back_side],
-    benefits: [
-      'Its change soil biology with physics',
-      'Crop shows immediate impact',
-      'Available nutrients from soil fast recovery in to plant and soil also',
-      'Stop pathogens which are available in soil or water',
-      'Root shows development in absorption & white root formation',
-      'Change the crop morphological characters'
-    ],
-    ingredients: ['Bacteria', 'Fungi', 'NPK', 'Nutrients'],
-    precautions: [
-      'Avoid direct contact with powder. Avoid smelling wash the hand before & after use of the संजीवनी for better results dissolve it in water & allow for 1hr & then use',
-      'Non-hazardous product, 100% Organic compound & non-toxic, its environment friendly product',
-      'Store in cool place, avoid direct sunlight',
-      'Keep in dry airtight container to prevent activation'
-    ],
-    usage: 'Drenching of plant in 15 days once or inline drip or flood water irrigation or foliar spray.',
-    brochure: null
-  },
+  }
 
 ];
 

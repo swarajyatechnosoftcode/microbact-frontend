@@ -213,7 +213,7 @@ export default function StatSection() {
     },
     {
       icon: Award,
-      value: '50+',
+      value: '200+',
       label: 'Happy Clients',
       subtitle: 'Building lasting relationships',
       badge: '+24',
@@ -222,7 +222,7 @@ export default function StatSection() {
     },
     {
       icon: Briefcase,
-      value: '10+',
+      value: '100+',
       label: 'Industries Served',
       subtitle: 'Diverse sector expertise',
       badge: '+3',
@@ -231,7 +231,7 @@ export default function StatSection() {
     },
     {
       icon: Calendar,
-      value: '2+',
+      value: '8+',
       label: 'Years Experience',
       subtitle: 'Growing stronger every year',
       badge: 'New',

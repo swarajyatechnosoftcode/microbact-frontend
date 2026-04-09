@@ -65,14 +65,14 @@ const About = () => {
   const team = [
     { id: 1, name: 'Bharat Chavan', designation: 'CEO & Founder', linkedin: '#', twitter: '#', email: 'bharat@microbact.com' },
     { id: 2, name: 'Girish Kulkarni', designation: 'Senior Scienitst', linkedin: '#', twitter: '#', email: 'girish@microbact.com' },
-    { id: 3, name: 'Shreyash Chavan', designation: 'Markeing Director', linkedin: '#', twitter: '#', email: 'rajesh@microbact.com' },
-    { id: 4, name: 'Anita Desai', designation: 'Quality Control Lead', linkedin: '#', twitter: '#', email: 'anita@microbact.com' }
+    { id: 3, name: 'Shreyash Chavan', designation: 'Markeing Director', linkedin: '#', twitter: '#', email: 'rajesh@microbact.com' }
   ];
 
   const stats = [
     { id: 1, number: '100%', label: 'Pollution-Free Goal', icon: Target, color: 'blue' },
     { id: 2, number: 'DRDO', label: 'Certified Lab', icon: Award, color: 'green' },
-    { id: 3, number: 'NIT', label: 'Warangal Recognized', icon: Shield, color: 'blue' }
+    { id: 3, number: 'NIT', label: 'Warangal Recognized', icon: Shield, color: 'blue' },
+    { id: 4, number: 'TOT Holder', label: 'Channel Partner', icon: Handshake, color: 'green' },
   ];
 
   const features = [
@@ -269,7 +269,7 @@ const About = () => {
               <p className="text-xl text-green-100">Dedicated professionals committed to environmental excellence</p>
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
               {team.map((member, index) => (
                 <div
                   key={member.id}
@@ -309,7 +309,7 @@ const About = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-4 mb-16">
           {stats.map((stat, index) => {
             const IconComponent = stat.icon;
             return (
@@ -335,7 +335,7 @@ const About = () => {
                   </div>
                   
                   {/* Number */}
-                  <div className={`text-6xl font-bold bg-gradient-to-r ${
+                  <div className={`text-3xl font-bold bg-gradient-to-r ${
                     stat.color === 'blue' ? 'from-blue-600 to-cyan-600' : 'from-green-600 to-emerald-600'
                   } bg-clip-text text-transparent mb-4 group-hover:scale-110 transition-transform duration-500`}>
                     {stat.number}
@@ -406,7 +406,7 @@ const About = () => {
                     Phone
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-sm md:text-base break-words">
-                    9518735229 / 9665755442<br />
+                    9960059919 / 9689971739<br />
                     Mon-Fri: 9:00 AM - 6:00 PM
                   </p>
                 </div>

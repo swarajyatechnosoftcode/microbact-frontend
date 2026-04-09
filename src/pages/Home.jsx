@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import all_p from "../assets/images/allproduct.png";
-import leftImg from "../assets/logos/microbactlogo.jpg";
+import leftImg from "../assets/logos/microbactlogo.png";
 import rightImg from "../assets/logos/drdologo.png";
 import CertificateSection from "../components/common/CertificateSection";
 import StatSection from "../components/common/StatSection";
@@ -30,12 +30,13 @@ export default function Home() {
         <img
           src={leftImg}
           alt="Product"
-          className="absolute left-4 md:left-8 top-24 w-20 md:w-28 lg:w-36 opacity-90"
+          className="absolute left-4 md:left-8 top-24 w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36 object-contain opacity-90"
         />
+
         <img
           src={rightImg}
           alt="Product"
-          className="absolute right-4 md:right-8 top-24 w-20 md:w-28 lg:w-36 opacity-90"
+          className="absolute right-4 md:right-8 top-24 w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36 object-contain opacity-90"
         />
         <div className="max-w-7xl w-full">
           <div className="text-center mb-6">
@@ -59,7 +60,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="relative px-4 md:px-8 pb-4">
+          <div className="relative text-center px-4 md:px-8 pb-4">
             <div
               className={`max-w-3xl mx-auto transition-all duration-1000 delay-500 transform ${
                 isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
@@ -73,6 +74,15 @@ export default function Home() {
                 />
               </div>
             </div>
+            <p
+              className={`text-lg md:text-2xl text-white font-semibold tracking-wide transition-all duration-1000 delay-300 transform ${
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-10"
+              }`}
+            >
+              Biological Solutions for a Sustainable Envirement
+            </p>
           </div>
         </div>
       </section>

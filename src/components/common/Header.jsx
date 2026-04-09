@@ -44,11 +44,11 @@ export default function Navbar() {
           
           {/* Logo */}
           <a href="/" className="flex items-center gap-3">
-            <img 
+            {/* <img 
               src={logo} 
               alt="Microbact Logo" 
               className="h-12 w-auto object-contain"
-            />
+            /> */}
           </a>
 
           {/* Desktop Menu */}
