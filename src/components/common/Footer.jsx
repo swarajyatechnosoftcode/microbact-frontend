@@ -4,7 +4,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-gradient-to-br from-green-500 via-emerald-600 to-green-600 text-white">
+    <footer className="relative text-white" style={{ background: 'linear-gradient(to bottom right, #0A2C1D, #0A2C1D, #0A2C1D)' }}>
 
       {/* Soft Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.2),transparent_70%)] pointer-events-none" />

@@ -1,10 +1,10 @@
 const theme = {
-  primary: '#10b981',
-  primaryLight: '#34d399',
-  primaryDark: '#059669',
-  secondary: '#22c55e',
-  text: '#10b981',
-  gradient: 'linear-gradient(to right, #10b981, #22c55e, #059669)',
+  primary: '#0A2C1D',
+  primaryLight: '#1a5c3a',
+  primaryDark: '#061a10',
+  secondary: '#0d3d26',
+  text: '#0A2C1D',
+  gradient: 'linear-gradient(to right, #0A2C1D, #0d3d26, #061a10)',
 };
 
 export default theme;

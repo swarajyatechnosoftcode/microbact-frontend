@@ -50,7 +50,7 @@ const About = () => {
       title: 'Our Vision',
       description: 'Our vision is to continuously do research for disposing of waste without disturbing biodiversity and maintaining natural balance.',
       color: 'green',
-      gradient: 'from-green-500 to-green-600'
+      gradient: 'from-[#0A2C1D] to-[#0d3d26]'
     },
     {
       id: 3,
@@ -88,11 +88,11 @@ const About = () => {
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="text-center mb-20 space-y-6">
-          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 via-emerald-500 to-green-600 mb-6 animate-gradient bg-300% hover:scale-105 transition-transform duration-700 animate-fadeInDown">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0A2C1D] via-[#0d3d26] to-[#0A2C1D] mb-6 animate-gradient bg-300% hover:scale-105 transition-transform duration-700 animate-fadeInDown">
             About Us
           </h1>
           
-          <p className="text-lg md:text-xl text-green-700 max-w-4xl mx-auto leading-relaxed animate-fadeInUp break-words px-4">
+          <p className="text-lg md:text-xl text-[#0A2C1D] max-w-4xl mx-auto leading-relaxed animate-fadeInUp break-words px-4">
             Microbact Bio Cultures Private Limited is a leading manufacturer and supplier specializing in microbial cultures and bio cultures. We are proud to be the authorized TOT holder for BIO Digester and Anaerobic bacteria generation plants from DRDO India. Additionally, we are accredited by NIT Warangal and IIT Roorkee, further cementing our commitment to technological excellence.
           </p>
           
@@ -103,7 +103,7 @@ const About = () => {
                 className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <feature.icon className="w-5 h-5 text-green-600" />
+                <feature.icon className="w-5 h-5 text-[#0A2C1D]" />
                 <span className="text-sm font-medium text-gray-700">{feature.text}</span>
               </div>
             ))}
@@ -111,15 +111,15 @@ const About = () => {
         </div>
 
         {/* Mission Section */}
-        <div className="bg-gradient-to-br from-green-50 via-emerald-50 to-green-50 rounded-3xl shadow-2xl p-10 md:p-16 mb-16 border-2 border-green-200 relative overflow-hidden">
+        <div className="bg-gradient-to-br from-[#0A2C1D]/5 via-[#0d3d26]/5 to-[#0A2C1D]/5 rounded-3xl shadow-2xl p-10 md:p-16 mb-16 border-2 border-[#0A2C1D]/20 relative overflow-hidden">
           {/* Decorative Elements */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-green-400/20 to-emerald-400/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-br from-emerald-400/20 to-green-400/20 rounded-full blur-3xl"></div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#0A2C1D]/20 to-[#0d3d26]/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-br from-[#0d3d26]/20 to-[#0A2C1D]/20 rounded-full blur-3xl"></div>
           
           <div className="relative z-10">
             {/* Header Badge */}
             <div className="flex justify-center mb-8">
-              <div className="inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-3 rounded-full text-base font-bold shadow-xl">
+              <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#0A2C1D] to-[#0d3d26] text-white px-8 py-3 rounded-full text-base font-bold shadow-xl">
                 <Target className="w-5 h-5" />
                 <span>Our Mission</span>
               </div>
@@ -127,19 +127,19 @@ const About = () => {
 
             {/* Main Title */}
             <h2 className="text-5xl md:text-6xl font-extrabold text-center mb-8">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0A2C1D] to-[#0d3d26]">
                 100% Pollution-Free India
               </span>
             </h2>
 
             {/* Content Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-green-100">
+              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-[#0A2C1D]/10">
                 <p className="text-gray-700 text-lg leading-relaxed">
                   Established in 2023, our company serves Pan India, delivering high-quality products designed for a wide range of applications, including septic tanks, composting, odor control, and effluent treatment. We are dedicated to providing sustainable solutions through our flagship products like Microbact Septic Tank Bio Culture, G9 Odo Odor Culture, and ETP Bio Culture.
                 </p>
               </div>
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-green-100">
+              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-[#0A2C1D]/10">
                 <p className="text-gray-700 text-lg leading-relaxed">
                   Led by our visionary CEO, Mr. Bharat Chavan, Microbact Bio Cultures operates with a team of skilled professionals, focusing on innovation and quality. With an annual turnover of approximately Rs. 0.5 to 2.5 Crore, we are committed to environmental sustainability and enhancing the efficiency of industrial operations through cutting-edge microbial solutions.
                 </p>
@@ -148,33 +148,33 @@ const About = () => {
 
             {/* Feature Cards */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-              <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-green-100">
+              <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-[#0A2C1D]/10">
                 <div className="flex flex-col items-center text-center gap-2">
-                  <div className="p-3 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full">
+                  <div className="p-3 bg-gradient-to-br from-[#0A2C1D] to-[#0d3d26] rounded-full">
                     <Shield className="w-6 h-6 text-white" />
                   </div>
                   <span className="font-bold text-gray-800 text-sm">Eco-Friendly</span>
                 </div>
               </div>
-              <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-green-100">
+              <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-[#0A2C1D]/10">
                 <div className="flex flex-col items-center text-center gap-2">
-                  <div className="p-3 bg-gradient-to-br from-emerald-500 to-green-500 rounded-full">
+                  <div className="p-3 bg-gradient-to-br from-[#0d3d26] to-[#0A2C1D] rounded-full">
                     <Zap className="w-6 h-6 text-white" />
                   </div>
                   <span className="font-bold text-gray-800 text-sm">Bio-Technology</span>
                 </div>
               </div>
-              <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-green-100">
+              <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-[#0A2C1D]/10">
                 <div className="flex flex-col items-center text-center gap-2">
-                  <div className="p-3 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full">
+                  <div className="p-3 bg-gradient-to-br from-[#0A2C1D] to-[#0d3d26] rounded-full">
                     <Award className="w-6 h-6 text-white" />
                   </div>
                   <span className="font-bold text-gray-800 text-sm">DRDO Certified</span>
                 </div>
               </div>
-              <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-green-100">
+              <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-[#0A2C1D]/10">
                 <div className="flex flex-col items-center text-center gap-2">
-                  <div className="p-3 bg-gradient-to-br from-emerald-500 to-green-500 rounded-full">
+                  <div className="p-3 bg-gradient-to-br from-[#0d3d26] to-[#0A2C1D] rounded-full">
                     <Rocket className="w-6 h-6 text-white" />
                   </div>
                   <span className="font-bold text-gray-800 text-sm">Innovation</span>
@@ -207,7 +207,7 @@ const About = () => {
                   <div className={`bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 hover:shadow-3xl transition-all duration-700 border border-gray-100 cursor-pointer transform hover:-translate-y-4 hover:scale-105 relative overflow-hidden h-full flex flex-col ${
                     hoveredCard === value.id ? 'ring-4 ring-opacity-50' : ''
                   } ${
-                    value.color === 'blue' ? 'hover:ring-blue-300' : 'hover:ring-green-300'
+                    value.color === 'blue' ? 'hover:ring-blue-300' : 'hover:ring-[#0A2C1D]/30'
                   }`}>
                     {/* Animated Background on Hover */}
                     <div className={`absolute inset-0 bg-gradient-to-br ${value.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-700`}></div>
@@ -220,7 +220,7 @@ const About = () => {
                     
                     <h3 className={`text-2xl font-bold mb-4 transition-colors duration-500 ${
                       hoveredCard === value.id 
-                        ? value.color === 'blue' ? 'text-blue-600' : 'text-green-600'
+                        ? value.color === 'blue' ? 'text-blue-600' : 'text-[#0A2C1D]'
                         : 'text-gray-800'
                     }`}>
                       {value.title}
@@ -239,7 +239,7 @@ const About = () => {
                     
                     {/* Learn More Link */}
                     <div className={`flex items-center gap-2 mt-4 text-sm font-semibold transition-all duration-500 ${
-                      value.color === 'blue' ? 'text-blue-600' : 'text-green-600'
+                      value.color === 'blue' ? 'text-blue-600' : 'text-[#0A2C1D]'
                     } opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-2`}>
                       <span>Learn More</span>
                       <ChevronRight className="w-4 h-4" />
@@ -255,7 +255,7 @@ const About = () => {
         </div>
 
         {/* Team Section */}
-        <div className="bg-gradient-to-br from-green-600 via-emerald-600 to-green-600 rounded-3xl shadow-2xl p-10 md:p-16 text-white mb-16 relative overflow-hidden">
+        <div className="bg-gradient-to-br from-[#0A2C1D] via-[#0d3d26] to-[#0A2C1D] rounded-3xl shadow-2xl p-10 md:p-16 text-white mb-16 relative overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
               backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
@@ -266,7 +266,7 @@ const About = () => {
           <div className="relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-5xl font-bold mb-4">Meet Our Team</h2>
-              <p className="text-xl text-green-100">Dedicated professionals committed to environmental excellence</p>
+              <p className="text-xl text-white/80">Dedicated professionals committed to environmental excellence</p>
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
@@ -278,8 +278,8 @@ const About = () => {
                 >
                   <div className="relative mx-auto mb-6">
                     <div className="w-32 h-32 bg-white rounded-full mx-auto flex items-center justify-center transform transition-all duration-700 group-hover:scale-110 shadow-2xl relative overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                      <Users className="w-16 h-16 text-green-600 group-hover:text-white transition-colors duration-700 relative z-10" strokeWidth={2} />
+                      <div className="absolute inset-0 bg-gradient-to-br from-[#0A2C1D] to-[#0d3d26] opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                      <Users className="w-16 h-16 text-[#0A2C1D] group-hover:text-white transition-colors duration-700 relative z-10" strokeWidth={2} />
                     </div>
                     <div className="absolute inset-0 bg-white rounded-full blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-700 -z-10"></div>
                   </div>
@@ -287,19 +287,19 @@ const About = () => {
                   <h3 className="font-bold text-xl mb-2 transform group-hover:scale-110 transition-transform duration-300">
                     {member.name}
                   </h3>
-                  <p className="text-green-100 group-hover:text-white transition-colors duration-300 font-medium mb-4">
+                  <p className="text-white/80 group-hover:text-white transition-colors duration-300 font-medium mb-4">
                     {member.designation}
                   </p>
                   
                   <div className="flex justify-center gap-3">
                     <a href={member.linkedin} className="w-8 h-8 bg-white/20 hover:bg-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
-                      <span className="text-white hover:text-green-600 text-sm font-bold">in</span>
+                      <span className="text-white hover:text-[#0A2C1D] text-sm font-bold">in</span>
                     </a>
                     <a href={member.twitter} className="w-8 h-8 bg-white/20 hover:bg-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
-                      <span className="text-white hover:text-green-600 text-sm font-bold">𝕏</span>
+                      <span className="text-white hover:text-[#0A2C1D] text-sm font-bold">𝕏</span>
                     </a>
                     <a href={`mailto:${member.email}`} className="w-8 h-8 bg-white/20 hover:bg-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
-                      <Mail className="w-4 h-4 text-white group-hover:text-green-600" />
+                      <Mail className="w-4 h-4 text-white group-hover:text-[#0A2C1D]" />
                     </a>
                   </div>
                 </div>
@@ -321,22 +321,22 @@ const About = () => {
                 <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-10 text-center border border-gray-100 transform hover:-translate-y-4 hover:shadow-3xl transition-all duration-700 cursor-pointer relative overflow-hidden">
                   {/* Animated Background */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${
-                    stat.color === 'blue' ? 'from-blue-500 to-cyan-500' : 'from-green-500 to-emerald-500'
+                    stat.color === 'blue' ? 'from-blue-500 to-cyan-500' : 'from-[#0A2C1D] to-[#0d3d26]'
                   } opacity-0 group-hover:opacity-10 transition-opacity duration-700`}></div>
                   
                   {/* Icon */}
                   <div className={`relative mx-auto w-20 h-20 mb-6 bg-gradient-to-br ${
-                    stat.color === 'blue' ? 'from-blue-500 to-cyan-500' : 'from-green-500 to-emerald-500'
+                    stat.color === 'blue' ? 'from-blue-500 to-cyan-500' : 'from-[#0A2C1D] to-[#0d3d26]'
                   } rounded-2xl flex items-center justify-center transform group-hover:scale-125 group-hover:rotate-12 transition-all duration-700 shadow-lg`}>
                     <IconComponent className="w-10 h-10 text-white" strokeWidth={2.5} />
                     <div className={`absolute inset-0 bg-gradient-to-br ${
-                      stat.color === 'blue' ? 'from-blue-500 to-cyan-500' : 'from-green-500 to-emerald-500'
+                      stat.color === 'blue' ? 'from-blue-500 to-cyan-500' : 'from-[#0A2C1D] to-[#0d3d26]'
                     } rounded-2xl blur-xl opacity-0 group-hover:opacity-60 transition-opacity duration-700`}></div>
                   </div>
                   
                   {/* Number */}
                   <div className={`text-3xl font-bold bg-gradient-to-r ${
-                    stat.color === 'blue' ? 'from-blue-600 to-cyan-600' : 'from-green-600 to-emerald-600'
+                    stat.color === 'blue' ? 'from-blue-600 to-cyan-600' : 'from-[#0A2C1D] to-[#0d3d26]'
                   } bg-clip-text text-transparent mb-4 group-hover:scale-110 transition-transform duration-500`}>
                     {stat.number}
                   </div>
@@ -349,7 +349,7 @@ const About = () => {
                 
                 {/* Glow Effect */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${
-                  stat.color === 'blue' ? 'from-blue-500 to-cyan-500' : 'from-green-500 to-emerald-500'
+                  stat.color === 'blue' ? 'from-blue-500 to-cyan-500' : 'from-[#0A2C1D] to-[#0d3d26]'
                 } rounded-2xl blur-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-700 -z-10`}></div>
               </div>
             );
@@ -397,12 +397,12 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col items-center text-center p-4 md:p-6 rounded-2xl hover:bg-green-50 transition-all duration-500 group cursor-pointer border border-transparent hover:border-green-200">
-                <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-500 shadow-lg mb-3">
+              <div className="flex flex-col items-center text-center p-4 md:p-6 rounded-2xl hover:bg-[#0A2C1D]/5 transition-all duration-500 group cursor-pointer border border-transparent hover:border-[#0A2C1D]/20">
+                <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#0A2C1D] to-[#0d3d26] rounded-xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-500 shadow-lg mb-3">
                   <Phone className="w-5 h-5 md:w-7 md:h-7 text-white" strokeWidth={2.5} />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg md:text-xl text-gray-800 mb-2 group-hover:text-green-600 transition-colors duration-300">
+                  <h3 className="font-bold text-lg md:text-xl text-gray-800 mb-2 group-hover:text-[#0A2C1D] transition-colors duration-300">
                     Phone
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-sm md:text-base break-words">
@@ -427,12 +427,12 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col items-center text-center p-4 md:p-6 rounded-2xl hover:bg-green-50 transition-all duration-500 group cursor-pointer border border-transparent hover:border-green-200">
-                <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-500 shadow-lg mb-3">
+              <div className="flex flex-col items-center text-center p-4 md:p-6 rounded-2xl hover:bg-[#0A2C1D]/5 transition-all duration-500 group cursor-pointer border border-transparent hover:border-[#0A2C1D]/20">
+                <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-[#0A2C1D] to-[#0d3d26] rounded-xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-500 shadow-lg mb-3">
                   <Clock className="w-5 h-5 md:w-7 md:h-7 text-white" strokeWidth={2.5} />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg md:text-xl text-gray-800 mb-2 group-hover:text-green-600 transition-colors duration-300">
+                  <h3 className="font-bold text-lg md:text-xl text-gray-800 mb-2 group-hover:text-[#0A2C1D] transition-colors duration-300">
                     Business Hours
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-sm md:text-base break-words">
@@ -447,7 +447,7 @@ const About = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="bg-gradient-to-br from-green-600 via-emerald-600 to-green-600 rounded-3xl shadow-2xl p-10 md:p-16 text-center relative overflow-hidden">
+        <div className="bg-gradient-to-br from-[#0A2C1D] via-[#0d3d26] to-[#0A2C1D] rounded-3xl shadow-2xl p-10 md:p-16 text-center relative overflow-hidden">
           {/* Animated Pattern Background */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
@@ -458,17 +458,17 @@ const About = () => {
           
           <div className="relative z-10">
             <h2 className="text-5xl font-bold text-white mb-6">Ready to Work With Us?</h2>
-            <p className="text-xl text-green-100 mb-10 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white/80 mb-10 max-w-3xl mx-auto leading-relaxed">
               Let's collaborate and create something amazing together. Get in touch with us today and let's start building the future!
             </p>
             
             <button 
               onClick={() => navigate('/contact')}
-              className="group relative bg-white text-green-600 px-12 py-5 rounded-full font-bold text-lg shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-500 overflow-hidden"
+              className="group relative bg-white text-[#0A2C1D] px-12 py-5 rounded-full font-bold text-lg shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-500 overflow-hidden"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#0A2C1D] to-[#0d3d26] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute inset-0 bg-white"></div>
-              <span className="absolute inset-0 bg-gradient-to-r from-green-600 to-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+              <span className="absolute inset-0 bg-gradient-to-r from-[#0A2C1D] to-[#0d3d26] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
               <span className="relative z-10 flex items-center gap-3 group-hover:text-white transition-colors duration-500">
                 Contact Us Now
                 <ChevronRight className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />

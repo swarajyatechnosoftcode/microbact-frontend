@@ -655,9 +655,9 @@ const ProductDetailModal = ({ product, isOpen, onClose }) => {
                   {product.benefits.map((benefit, index) => (
                     <div
                       key={index}
-                      className="flex items-start gap-3 bg-green-50 rounded-xl p-4 transition-all duration-300 hover:bg-green-100"
+                      className="flex items-start gap-3 bg-[#0A2C1D]/5 rounded-xl p-4 transition-all duration-300 hover:bg-[#0A2C1D]/10"
                     >
-                      <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-6 h-6 text-[#0A2C1D] flex-shrink-0 mt-0.5" />
                       <span className="text-gray-700 font-medium">{benefit}</span>
                     </div>
                   ))}
@@ -670,9 +670,9 @@ const ProductDetailModal = ({ product, isOpen, onClose }) => {
                     {product.ingredients.map((ingredient, index) => (
                       <div
                         key={index}
-                        className="flex items-center gap-2 bg-gradient-to-br from-teal-50 to-green-50 rounded-xl p-3 transition-all duration-300 hover:shadow-md"
+                        className="flex items-center gap-2 bg-gradient-to-br from-teal-50 to-[#0A2C1D]/5 rounded-xl p-3 transition-all duration-300 hover:shadow-md"
                       >
-                        <Leaf className="w-5 h-5 text-green-600" />
+                        <Leaf className="w-5 h-5 text-[#0A2C1D]" />
                         <span className="text-gray-700 font-medium text-sm">{ingredient}</span>
                       </div>
                     ))}
@@ -811,7 +811,7 @@ const ProductDetailModal = ({ product, isOpen, onClose }) => {
                   </div>
 
                   {/* Ecological Information */}
-                  <div className="bg-emerald-50 rounded-2xl p-6">
+                  <div className="bg-[#0A2C1D]/5 rounded-2xl p-6">
                     <h4 className="font-bold text-gray-800 mb-4">Ecological Information</h4>
                     <div className="space-y-2 text-sm">
                       <p><strong>Ecological Information:</strong> {msdsData.ecological.information}</p>
@@ -871,8 +871,8 @@ const ProductDetailModal = ({ product, isOpen, onClose }) => {
                 <Shield className="w-6 h-6 text-blue-600 mx-auto mb-1" />
                 <p className="text-xs font-semibold text-gray-700">Tested</p>
               </div>
-              <div className="text-center p-3 bg-green-50 rounded-xl">
-                <Leaf className="w-6 h-6 text-green-600 mx-auto mb-1" />
+              <div className="text-center p-3 bg-[#0A2C1D]/5 rounded-xl">
+                <Leaf className="w-6 h-6 text-[#0A2C1D] mx-auto mb-1" />
                 <p className="text-xs font-semibold text-gray-700">Natural</p>
               </div>
               <div className="text-center p-3 bg-purple-50 rounded-xl">
@@ -940,7 +940,7 @@ const Services = () => {
         <div className="text-center mb-16 space-y-6">
      
 
-          <h1 className="text-6xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 via-emerald-500 to-green-600 animate-gradient bg-300%">
+          <h1 className="text-6xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0A2C1D] via-[#0d3d26] to-[#0A2C1D] animate-gradient bg-300%">
             Our Product
           </h1>
 
@@ -961,7 +961,7 @@ const Services = () => {
               </div>
             </div>
             <div className="flex items-center gap-3 bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
-              <TrendingUp className="text-green-600" size={24} />
+              <TrendingUp className="text-[#0A2C1D]" size={24} />
               <div className="text-left">
                 <div className="text-2xl font-bold text-gray-800">100%</div>
                 <div className="text-xs text-gray-600">Natural</div>
@@ -978,8 +978,8 @@ const Services = () => {
               onClick={() => setActiveFilter(category)}
               className={`px-6 py-3 rounded-full font-bold transition-all duration-300 border-2 ${
                 activeFilter === category
-                  ? 'bg-gradient-to-r from-green-600 to-emerald-600 text-white shadow-xl border-green-600 scale-105'
-                  : 'bg-white text-gray-700 shadow-lg border-gray-200 hover:border-green-500 hover:shadow-xl hover:scale-105'
+                  ? 'bg-gradient-to-r from-[#0A2C1D] to-[#0d3d26] text-white shadow-xl border-[#0A2C1D] scale-105'
+                  : 'bg-white text-gray-700 shadow-lg border-gray-200 hover:border-[#0A2C1D] hover:shadow-xl hover:scale-105'
               }`}
             >
               {category}

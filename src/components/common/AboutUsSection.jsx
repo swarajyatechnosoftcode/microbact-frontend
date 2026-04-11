@@ -12,9 +12,9 @@ export default function AboutUsSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-gray-800 mb-4">
-            About <span className="bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">Us</span>
+            About <span className="bg-gradient-to-r from-[#0A2C1D] to-[#0d3d26] bg-clip-text text-transparent">Us</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-emerald-500 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#0A2C1D] to-[#0d3d26] mx-auto rounded-full"></div>
         </div>
 
         {/* Main Content Grid */}
@@ -22,7 +22,7 @@ export default function AboutUsSection() {
           {/* Left Column - Mission */}
           <div className="space-y-6">
             <div className="flex items-start gap-4">
-              <div className="bg-gradient-to-br from-green-500 to-emerald-500 p-3 rounded-xl shadow-lg">
+              <div className="bg-gradient-to-br from-[#0A2C1D] to-[#0d3d26] p-3 rounded-xl shadow-lg">
                 <Target className="text-white" size={32} />
               </div>
               <div>
@@ -34,7 +34,7 @@ export default function AboutUsSection() {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="bg-gradient-to-br from-emerald-500 to-teal-500 p-3 rounded-xl shadow-lg">
+              <div className="bg-gradient-to-br from-[#0d3d26] to-[#0A2C1D] p-3 rounded-xl shadow-lg">
                 <Leaf className="text-white" size={32} />
               </div>
               <div>
@@ -49,7 +49,7 @@ export default function AboutUsSection() {
           {/* Right Column - About */}
           <div className="bg-white rounded-2xl shadow-2xl p-8 border border-gray-100">
             <div className="flex items-center gap-3 mb-6">
-              <Award className="text-green-600" size={36} />
+              <Award className="text-[#0A2C1D]" size={36} />
               <h3 className="text-2xl font-bold text-gray-800">Who We Are</h3>
             </div>
             <p className="text-gray-600 leading-relaxed mb-6">
@@ -62,19 +62,19 @@ export default function AboutUsSection() {
             {/* Key Points */}
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                <CheckCircle className="text-green-500 flex-shrink-0" size={20} />
+                <CheckCircle className="text-[#0A2C1D] flex-shrink-0" size={20} />
                 <span className="text-gray-700">DRDO Certified Laboratory</span>
               </div>
               <div className="flex items-center gap-3">
-                <CheckCircle className="text-green-500 flex-shrink-0" size={20} />
+                <CheckCircle className="text-[#0A2C1D] flex-shrink-0" size={20} />
                 <span className="text-gray-700">Recognized by NIT Warangal</span>
               </div>
               <div className="flex items-center gap-3">
-                <CheckCircle className="text-green-500 flex-shrink-0" size={20} />
+                <CheckCircle className="text-[#0A2C1D] flex-shrink-0" size={20} />
                 <span className="text-gray-700">100% Eco-Friendly Solutions</span>
               </div>
               <div className="flex items-center gap-3">
-                <CheckCircle className="text-green-500 flex-shrink-0" size={20} />
+                <CheckCircle className="text-[#0A2C1D] flex-shrink-0" size={20} />
                 <span className="text-gray-700">Comprehensive Waste Management</span>
               </div>
             </div>
@@ -82,14 +82,14 @@ export default function AboutUsSection() {
         </div>
 
         {/* Bottom Banner */}
-        <div className="bg-gradient-to-r from-green-600 via-emerald-500 to-green-600 rounded-2xl shadow-2xl p-8 text-center text-white">
+        <div className="bg-gradient-to-r from-[#0A2C1D] via-[#0d3d26] to-[#0A2C1D] rounded-2xl shadow-2xl p-8 text-center text-white">
           <h3 className="text-3xl font-bold mb-4">Product Catalogue</h3>
           <p className="text-lg leading-relaxed max-w-4xl mx-auto mb-6">
             We offer comprehensive solutions for liquid and solid waste pollution. Our focus on quality and quantity ensures effectiveness, while also empowering you to contribute to a cleaner environment through our wide range of bio-culture products.
           </p>
           <button
             onClick={() => navigate('/services')}
-            className="bg-white text-green-600 font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2 mx-auto group"
+            className="bg-white text-[#0A2C1D] font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2 mx-auto group"
           >
             <span>Read More</span>
             <ArrowRight size={20} className="transition-transform duration-300 group-hover:translate-x-1" />

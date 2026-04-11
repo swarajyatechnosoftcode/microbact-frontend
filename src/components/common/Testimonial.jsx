@@ -59,7 +59,7 @@ const Testimonial = () => {
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-14">
-          <h2 className="text-5xl md:text-6xl font-bold text-green-700 mb-3">
+          <h2 className="text-5xl md:text-6xl font-bold text-[#0A2C1D] mb-3">
             Client Testimonials
           </h2>
           <p className="text-gray-600 text-xl">What our clients say about us</p>
@@ -80,7 +80,7 @@ const Testimonial = () => {
                     : "scale-90 opacity-50"
                 }`}
               >
-                <div className="relative bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl shadow-2xl p-8 w-[85vw] md:w-[320px] text-center">
+                <div className="relative bg-gradient-to-br from-[#0A2C1D] to-[#0d3d26] rounded-2xl shadow-2xl p-8 w-[85vw] md:w-[320px] text-center">
                   <Quote
                     size={50}
                     className="absolute top-4 right-4 text-white/30"
@@ -131,8 +131,8 @@ const Testimonial = () => {
               onClick={() => setCenter(index)}
               className={`transition-all duration-300 rounded-full ${
                 index === center
-                  ? "bg-green-600 w-10 h-3 shadow-lg"
-                  : "bg-gray-300 w-3 h-3 hover:bg-green-400"
+                  ? "bg-[#0A2C1D] w-10 h-3 shadow-lg"
+                  : "bg-gray-300 w-3 h-3 hover:bg-[#0d3d26]"
               }`}
             />
           ))}

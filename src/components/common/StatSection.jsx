@@ -39,7 +39,7 @@ const StatCard = ({ icon: Icon, value, label, subtitle, badge, delay, color }) =
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className={`absolute inset-0 bg-gradient-to-br from-green-500/10 via-emerald-500/10 to-green-500/10 transition-opacity duration-500 ${
+      <div className={`absolute inset-0 bg-gradient-to-br from-[#0A2C1D]/10 via-[#0d3d26]/10 to-[#0A2C1D]/10 transition-opacity duration-500 ${
         isHovered ? 'opacity-100' : 'opacity-0'
       }`}></div>
 
@@ -52,7 +52,7 @@ const StatCard = ({ icon: Icon, value, label, subtitle, badge, delay, color }) =
 
       {/* Badge */}
       {badge && (
-        <div className={`absolute top-6 right-6 bg-gradient-to-r from-green-100 to-emerald-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full transition-all duration-300 ${
+        <div className={`absolute top-6 right-6 bg-gradient-to-r from-[#0A2C1D]/10 to-[#0d3d26]/10 text-[#0A2C1D] text-xs font-bold px-3 py-1 rounded-full transition-all duration-300 ${
           isHovered ? 'scale-110 shadow-md' : ''
         }`}>
           {badge}
@@ -68,7 +68,7 @@ const StatCard = ({ icon: Icon, value, label, subtitle, badge, delay, color }) =
 
       {/* Value */}
       <div className="mb-3 relative z-10">
-        <span className={`text-5xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent transition-all duration-300 ${
+        <span className={`text-5xl font-bold bg-gradient-to-r from-[#0A2C1D] to-[#0d3d26] bg-clip-text text-transparent transition-all duration-300 ${
           isHovered ? 'scale-105' : ''
         }`}>
           {value.includes('%') || value.includes('+') 
@@ -79,12 +79,12 @@ const StatCard = ({ icon: Icon, value, label, subtitle, badge, delay, color }) =
       </div>
 
       {/* Label */}
-      <h3 className="text-xl font-bold text-gray-800 mb-2 relative z-10 transition-colors duration-300 group-hover:text-green-700">{label}</h3>
+      <h3 className="text-xl font-bold text-gray-800 mb-2 relative z-10 transition-colors duration-300 group-hover:text-[#0A2C1D]">{label}</h3>
 
       {/* Subtitle */}
       <p className="text-gray-500 text-sm relative z-10">{subtitle}</p>
 
-      <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-green-500 via-emerald-500 to-green-500 transition-all duration-500 ${
+      <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#0A2C1D] via-[#0d3d26] to-[#0A2C1D] transition-all duration-500 ${
         isHovered ? 'h-2' : 'h-1'
       }`}></div>
     </div>
@@ -116,7 +116,7 @@ const RatingCard = ({ delay }) => {
 
   return (
     <div
-      className={`relative bg-gradient-to-br from-green-600 via-emerald-600 to-green-700 rounded-3xl p-10 shadow-xl transition-all duration-500 transform ${
+      className={`relative bg-gradient-to-br from-[#0A2C1D] via-[#0d3d26] to-[#061a10] rounded-3xl p-10 shadow-xl transition-all duration-500 transform ${
         isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
       } ${isHovered ? '-translate-y-3 shadow-2xl' : ''} overflow-hidden h-full flex flex-col justify-between cursor-pointer group`}
       onMouseEnter={() => setIsHovered(true)}
@@ -136,9 +136,9 @@ const RatingCard = ({ delay }) => {
       <div className="flex justify-center mb-6 relative z-10">
         <div className="relative">
           <div className={`w-40 h-40 rounded-full border-4 border-white/20 flex items-center justify-center transition-all duration-500 ${
-            isHovered ? 'border-green-300/40 scale-110 shadow-lg shadow-green-400/20' : ''
+            isHovered ? 'border-[#0d3d26]/40 scale-110 shadow-lg shadow-[#0A2C1D]/20' : ''
           }`}>
-            <div className={`absolute inset-0 rounded-full bg-gradient-to-r from-green-400 via-emerald-400 to-green-400 transition-opacity duration-500 ${
+            <div className={`absolute inset-0 rounded-full bg-gradient-to-r from-[#0A2C1D] via-[#0d3d26] to-[#0A2C1D] transition-opacity duration-500 ${
               isHovered ? 'opacity-20 animate-spin-slow' : 'opacity-0'
             }`} style={{ padding: '2px' }}></div>
             
@@ -184,15 +184,15 @@ const RatingCard = ({ delay }) => {
 
       {/* View Testimonials Button */}
       <div className="mt-8 relative z-10">
-        <button className={`w-full bg-gradient-to-r from-green-400/20 to-emerald-400/20 hover:from-green-400/30 hover:to-emerald-400/30 backdrop-blur-sm text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 border-2 flex items-center justify-center gap-2 ${
-          isHovered ? 'border-green-300/50 shadow-lg shadow-green-400/20' : 'border-white/30'
+        <button className={`w-full bg-gradient-to-r from-[#0A2C1D]/20 to-[#0d3d26]/20 hover:from-[#0A2C1D]/30 hover:to-[#0d3d26]/30 backdrop-blur-sm text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 border-2 flex items-center justify-center gap-2 ${
+          isHovered ? 'border-[#0d3d26]/50 shadow-lg shadow-[#0A2C1D]/20' : 'border-white/30'
         }`}>
           View Testimonials
           <span className={`text-lg transition-transform duration-300 ${isHovered ? 'translate-x-2' : ''}`}>→</span>
         </button>
       </div>
 
-      <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-green-400 via-emerald-400 to-green-400 transition-all duration-500 ${
+      <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#0A2C1D] via-[#0d3d26] to-[#0A2C1D] transition-all duration-500 ${
         isHovered ? 'h-2' : 'h-1'
       }`}></div>
     </div>
@@ -208,7 +208,7 @@ export default function StatSection() {
       label: 'Client Satisfaction',
       subtitle: 'Consistently exceeding expectations',
       badge: '+10%',
-      color: 'bg-gradient-to-br from-green-500 to-green-600',
+      color: 'bg-gradient-to-br from-[#0A2C1D] to-[#0d3d26]',
       delay: 200
     },
     {
@@ -217,7 +217,7 @@ export default function StatSection() {
       label: 'Happy Clients',
       subtitle: 'Building lasting relationships',
       badge: '+24',
-      color: 'bg-gradient-to-br from-emerald-500 to-emerald-600',
+      color: 'bg-gradient-to-br from-[#0d3d26] to-[#0A2C1D]',
       delay: 400
     },
     {
@@ -226,7 +226,7 @@ export default function StatSection() {
       label: 'Industries Served',
       subtitle: 'Diverse sector expertise',
       badge: '+3',
-      color: 'bg-gradient-to-br from-green-500 to-green-600',
+      color: 'bg-gradient-to-br from-[#0A2C1D] to-[#0d3d26]',
       delay: 600
     },
     {
@@ -235,7 +235,7 @@ export default function StatSection() {
       label: 'Years Experience',
       subtitle: 'Growing stronger every year',
       badge: 'New',
-      color: 'bg-gradient-to-br from-green-500 to-green-600',
+      color: 'bg-gradient-to-br from-[#0A2C1D] to-[#0d3d26]',
       delay: 800
     }
   ];
@@ -246,7 +246,7 @@ export default function StatSection() {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-6xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-green-600 via-emerald-600 to-green-600 bg-clip-text text-transparent">Excellence in Numbers</span>
+            <span className="bg-gradient-to-r from-[#0A2C1D] via-[#0d3d26] to-[#0A2C1D] bg-clip-text text-transparent">Excellence in Numbers</span>
           </h1>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Discover the impact we've made across industries and relationships
@@ -272,7 +272,7 @@ export default function StatSection() {
         <div className="text-center animate-fade-in" style={{ animationDelay: '1000ms' }}>
           <button 
             onClick={() => navigate('/contact')}
-            className="bg-gradient-to-r from-green-500 via-emerald-500 to-green-500 hover:from-green-600 hover:via-emerald-600 hover:to-green-600 text-white font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 flex items-center justify-center gap-2 mx-auto group"
+            className="bg-gradient-to-r from-[#0A2C1D] via-[#0d3d26] to-[#0A2C1D] hover:from-[#061a10] hover:via-[#0A2C1D] hover:to-[#061a10] text-white font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 flex items-center justify-center gap-2 mx-auto group"
           >
             Become Our Next Success Story
             <span className="text-xl transition-transform duration-300 group-hover:translate-x-2">→</span>

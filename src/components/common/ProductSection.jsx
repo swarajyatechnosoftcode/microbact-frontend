@@ -257,7 +257,7 @@ export default function ProductSection() {
         <div className="text-center mb-12 sm:mb-16 animate-fade-in">
           <div className="inline-block mb-4">
             <div className="flex flex-col sm:flex-row items-center gap-3">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-green-700">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0A2C1D]">
                 Our popular products
               </h1>
             </div>
@@ -288,7 +288,7 @@ export default function ProductSection() {
           <button
             onClick={handlePrevious}
             disabled={isTransitioning}
-            className="bg-white hover:bg-gradient-to-r hover:from-green-500 hover:to-emerald-500 text-gray-700 hover:text-white p-3 sm:p-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110 hover:rotate-3 group disabled:opacity-50 disabled:cursor-not-allowed"
+            className="bg-white hover:bg-gradient-to-r hover:from-[#0A2C1D] hover:to-[#0d3d26] text-gray-700 hover:text-white p-3 sm:p-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110 hover:rotate-3 group disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <ChevronLeft size={24} className="sm:w-7 sm:h-7 transition-transform duration-300 group-hover:-translate-x-1 group-hover:scale-110" />
           </button>
@@ -301,8 +301,8 @@ export default function ProductSection() {
                 disabled={isTransitioning}
                 className={`transition-all duration-500 rounded-full disabled:cursor-not-allowed ${
                   index === currentIndex
-                    ? 'bg-gradient-to-r from-green-500 to-emerald-500 w-12 h-4 shadow-lg animate-pulse-slow'
-                    : 'bg-gray-300 hover:bg-gradient-to-r hover:from-green-400 hover:to-emerald-400 w-4 h-4 hover:w-8 hover:scale-110'
+                    ? 'bg-gradient-to-r from-[#0A2C1D] to-[#0d3d26] w-12 h-4 shadow-lg animate-pulse-slow'
+                    : 'bg-gray-300 hover:bg-gradient-to-r hover:from-[#0A2C1D] hover:to-[#0d3d26] w-4 h-4 hover:w-8 hover:scale-110'
                 }`}
               />
             ))}
@@ -311,7 +311,7 @@ export default function ProductSection() {
           <button
             onClick={handleNext}
             disabled={isTransitioning}
-            className="bg-white hover:bg-gradient-to-r hover:from-green-500 hover:to-emerald-500 text-gray-700 hover:text-white p-3 sm:p-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110 hover:-rotate-3 group disabled:opacity-50 disabled:cursor-not-allowed"
+            className="bg-white hover:bg-gradient-to-r hover:from-[#0A2C1D] hover:to-[#0d3d26] text-gray-700 hover:text-white p-3 sm:p-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110 hover:-rotate-3 group disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <ChevronRight size={24} className="sm:w-7 sm:h-7 transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-110" />
           </button>
@@ -321,7 +321,7 @@ export default function ProductSection() {
         <div className="text-center mt-6 animate-fade-in animation-delay-800">
           <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-5 py-2 rounded-full shadow-lg">
             <div className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-              isAutoPlaying ? 'bg-green-500 animate-ping' : 'bg-gray-400'
+              isAutoPlaying ? 'bg-[#0A2C1D] animate-ping' : 'bg-gray-400'
             }`}></div>
             <p className="text-sm text-gray-700 font-medium">
               {isAutoPlaying ? 'Auto-playing' : 'Paused'} • Hover to pause
