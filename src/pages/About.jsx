@@ -421,7 +421,7 @@ const About = () => {
                     Email
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-sm md:text-base break-words">
-                    Info.microbactbiocultures@gmail.com<br />
+                    info.microbactbiocultures@gmail.com<br />
                     support@microbactbiocultures.com
                   </p>
                 </div>

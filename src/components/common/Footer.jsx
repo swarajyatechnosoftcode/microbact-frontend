@@ -60,8 +60,8 @@ export default function Footer() {
               <li>📍 Ground Floor, Shop No 1, Gat No 12/1/2, Kasarsai Road, Sumit Mens Parlour, Nere, Pune, Maharashtra - 410506, India</li>
               <li>
                 ✉️{" "}
-                <a href="mailto:Info.microbactbiocultures@gmail.com" className="hover:text-white">
-                  Info.microbactbiocultures@gmail.com
+                <a href="mailto:info.microbactbiocultures@gmail.com" className="hover:text-white">
+                  info.microbactbiocultures@gmail.com
                 </a>
               </li>
               <li>
