@@ -35,7 +35,7 @@ const Contact = () => {
       {/* Header Section with Gradient */}
       <div className="relative pt-16 pb-24 overflow-hidden ">
         <div className="relative max-w-6xl mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-extrabold text-green-600 mb-4 animate-fade-in-down">
+          <h1 className="text-5xl md:text-6xl font-extrabold text-[#0A2C1D] mb-4 animate-fade-in-down">
             Let's Connect
           </h1>
           <p className="text-xl text-gray-600 animate-fade-in-up max-w-2xl mx-auto">
@@ -49,13 +49,13 @@ const Contact = () => {
         {/* Contact Info Cards with Hover Effects */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           {[
-            { icon: Phone, title: 'Call Us', info: '9960059919 / 9689971739', subinfo: 'Mon-Fri 9am-6pm', gradient: 'from-green-500 to-emerald-600', bgColor: 'bg-green-50', delay: '0s' },
-            { icon: Mail, title: 'Email Us', info: 'info.microbactbiocultures@gmail.com', subinfo: 'We reply within 24hrs', gradient: 'from-emerald-500 to-green-600', bgColor: 'bg-emerald-50', delay: '0.1s' },
-            { icon: MapPin, title: 'Visit Us', info: 'Ground Floor, Shop No 1, Gat No 12/1/2, Kasarsai Road, Sumit Mens Parlour, Nere', subinfo: 'Pune, Maharashtra - 410506, India', gradient: 'from-green-500 to-emerald-500', bgColor: 'bg-gradient-to-br from-green-50 to-emerald-50', delay: '0.2s' }
+            { icon: Phone, title: 'Call Us', info: '9960059919 / 9689971739', subinfo: 'Mon-Fri 9am-6pm', gradient: 'from-[#0A2C1D] to-[#0d3d26]', bgColor: 'bg-[#0A2C1D]/5', delay: '0s' },
+            { icon: Mail, title: 'Email Us', info: 'Info.microbactbiocultures@gmail.com', subinfo: 'We reply within 24hrs', gradient: 'from-[#0d3d26] to-[#0A2C1D]', bgColor: 'bg-[#0d3d26]/5', delay: '0.1s' },
+            { icon: MapPin, title: 'Visit Us', info: 'Ground Floor, Shop No 1, Gat No 12/1/2, Kasarsai Road, Sumit Mens Parlour, Nere', subinfo: 'Pune, Maharashtra - 410506, India', gradient: 'from-[#0A2C1D] to-[#0d3d26]', bgColor: 'bg-gradient-to-br from-[#0A2C1D]/5 to-[#0d3d26]/5', delay: '0.2s' }
           ].map((item, idx) => (
             <div
               key={idx}
-              className={`group relative ${item.bgColor} rounded-2xl p-6 border-2 border-gray-100 hover:border-green-300 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl animate-fade-in-up`}
+              className={`group relative ${item.bgColor} rounded-2xl p-6 border-2 border-gray-100 hover:border-[#0A2C1D]/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl animate-fade-in-up`}
               style={{ animationDelay: item.delay }}
             >
               <div className={`bg-gradient-to-br ${item.gradient} w-14 h-14 rounded-xl flex items-center justify-center mb-4 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg`}>
@@ -74,12 +74,12 @@ const Contact = () => {
         {/* Compact Contact Form */}
         <div className="max-w-2xl mx-auto">
           <div className="relative bg-white rounded-2xl shadow-xl border-2 border-gray-100 overflow-hidden">
-            <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-green-500 via-emerald-500 to-green-500" />
+            <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#0A2C1D] via-[#0d3d26] to-[#0A2C1D]" />
             
             <div className="relative p-8">
               <div className="text-center mb-6">
                 <h2 className="text-3xl font-extrabold text-gray-800 mb-2">
-                  Send Us a <span className="bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">Message</span>
+                  Send Us a <span className="bg-gradient-to-r from-[#0A2C1D] to-[#0d3d26] bg-clip-text text-transparent">Message</span>
                 </h2>
                 <p className="text-gray-600">Fill out the form below and we'll get back to you ASAP</p>
               </div>
@@ -101,11 +101,11 @@ const Contact = () => {
                           onFocus={() => setFocusedField(field)}
                           onBlur={() => setFocusedField(null)}
                           required
-                          className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-lg text-gray-800 placeholder-gray-400 focus:border-green-500 focus:bg-white focus:outline-none transition-all duration-300"
+                          className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-lg text-gray-800 placeholder-gray-400 focus:border-[#0A2C1D] focus:bg-white focus:outline-none transition-all duration-300"
                           placeholder={field === 'name' ? 'John Doe' : 'john@example.com'}
                         />
                         {focusedField === field && (
-                          <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-green-500/20 to-emerald-500/20 -z-10 blur-xl" />
+                          <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-[#0A2C1D]/20 to-emerald-500/20 -z-10 blur-xl" />
                         )}
                       </div>
                     </div>
@@ -126,11 +126,11 @@ const Contact = () => {
                       onFocus={() => setFocusedField('subject')}
                       onBlur={() => setFocusedField(null)}
                       required
-                      className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-lg text-gray-800 placeholder-gray-400 focus:border-green-500 focus:bg-white focus:outline-none transition-all duration-300"
+                      className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-lg text-gray-800 placeholder-gray-400 focus:border-[#0A2C1D] focus:bg-white focus:outline-none transition-all duration-300"
                       placeholder="How can we help you?"
                     />
                     {focusedField === 'subject' && (
-                      <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-emerald-500/20 to-green-500/20 -z-10 blur-xl" />
+                      <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-emerald-500/20 to-[#0A2C1D]/20 -z-10 blur-xl" />
                     )}
                   </div>
                 </div>
@@ -149,11 +149,11 @@ const Contact = () => {
                       onBlur={() => setFocusedField(null)}
                       required
                       rows="4"
-                      className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-lg text-gray-800 placeholder-gray-400 focus:border-green-500 focus:bg-white focus:outline-none transition-all duration-300 resize-none"
+                      className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-lg text-gray-800 placeholder-gray-400 focus:border-[#0A2C1D] focus:bg-white focus:outline-none transition-all duration-300 resize-none"
                       placeholder="Tell us more about your project or inquiry..."
                     />
                     {focusedField === 'message' && (
-                      <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-green-500/20 to-emerald-500/20 -z-10 blur-xl" />
+                      <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-[#0A2C1D]/20 to-emerald-500/20 -z-10 blur-xl" />
                     )}
                   </div>
                 </div>
@@ -161,7 +161,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="relative w-full group overflow-hidden bg-gradient-to-r from-green-600 to-emerald-600 text-white font-bold py-3.5 px-6 rounded-lg hover:from-green-700 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl"
+                  className="relative w-full group overflow-hidden bg-gradient-to-r from-[#0A2C1D] to-[#0d3d26] text-white font-bold py-3.5 px-6 rounded-lg hover:from-[#061a10] hover:to-[#0A2C1D] transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl"
                 >
                   <span className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
                   <span className="relative flex items-center justify-center gap-2">
@@ -188,15 +188,15 @@ const Contact = () => {
         <div className="mt-12 text-center">
           <div className="flex flex-wrap justify-center items-center gap-6 text-gray-600 text-sm">
             <div className="flex items-center gap-2">
-              <CheckCircle className="text-green-500" size={18} />
+              <CheckCircle className="text-[#0A2C1D]" size={18} />
               <span className="font-medium">Secure & Encrypted</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle className="text-green-500" size={18} />
+              <CheckCircle className="text-[#0A2C1D]" size={18} />
               <span className="font-medium">24/7 Support</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle className="text-green-500" size={18} />
+              <CheckCircle className="text-[#0A2C1D]" size={18} />
               <span className="font-medium">Quick Response</span>
             </div>
           </div>
